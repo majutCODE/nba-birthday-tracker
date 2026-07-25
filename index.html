@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NBA Player Birthdays</title>
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+  <header>
+    <h1>NBA Birthday Tracker</h1>
+    <p class="subtitle" id="subtitle">Loading active players…</p>
+    <p class="freshness-row">
+      <span id="freshness"></span>
+      <button id="refreshBtn" class="refresh-btn" title="Refresh from ESPN now">⟳ Refresh</button>
+    </p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <div class="view-tabs">
+        <button class="tab-btn active" id="todayTab">Today</button>
+        <button class="tab-btn" id="upcomingTab">Next 14 Days</button>
+        <button class="tab-btn" id="browseTab">Browse Date</button>
+      </div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search player name…" autocomplete="off">
+      </div>
+    </section>
+
+    <section class="date-picker" id="datePicker" hidden>
+      <select id="monthSelect"></select>
+      <select id="daySelect"></select>
+    </section>
+
+    <section id="resultsHeader">
+      <h2 id="resultsTitle">Loading…</h2>
+    </section>
+
+    <section id="results" class="player-grid"></section>
+  </main>
+
+<script src="app.js?v=3"></script>
+</body>
+</html>

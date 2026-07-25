@@ -1,0 +1,30 @@
+name: Tweet NBA birthdays
+
+on:
+  schedule:
+    # 12:00 UTC ≈ 8:00am US Eastern (7:00am during EST in winter).
+    # The script itself computes "today" in America/New_York regardless of
+    # exactly when this fires, so a small DST drift doesn't cause wrong dates.
+    - cron: "0 12 * * *"
+  workflow_dispatch: {} # lets you trigger a run manually from the Actions tab
+
+jobs:
+  tweet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r bot/requirements.txt
+
+      - name: Post today's birthdays
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+        run: python bot/tweet_birthdays.py
