@@ -63,9 +63,6 @@ def get_us_today():
     return now.month, now.day
 
 
-SITE_URL = "https://nbaplayerbirthdays.com"
-
-
 def build_tweet(todays_players, month, day):
     date_str = f"{MONTH_NAMES[month - 1]} {day}"
     header = f"\U0001F3C0\U0001F382 NBA birthdays today ({date_str}, US ET):"
@@ -74,14 +71,14 @@ def build_tweet(todays_players, month, day):
 
     prop_word = "props" if len(todays_players) > 1 else "prop"
     hook = f"Will they hit the over on their points {prop_word}?"
-    cta = f"Track other birthdays for sports betting on, {SITE_URL}"
+    cta = "Track other birthdays for sports betting — link in bio"
     footer = hook + "\n\n" + cta
 
     full = player_block + "\n\n" + footer
     if len(full) <= TWEET_MAX_LEN:
         return full
 
-    # Footer (hook + link) doesn't fit — drop it before ever truncating the
+    # Footer (hook + CTA) doesn't fit — drop it before ever truncating the
     # player list, since the list is the actual content.
     if len(player_block) <= TWEET_MAX_LEN:
         return player_block
