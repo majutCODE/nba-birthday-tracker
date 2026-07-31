@@ -76,8 +76,11 @@ header h1 {
 }
 
 .refresh-btn {
+  display: inline-block;
   padding: 4px 14px;
+  font-family: var(--font-body);
   font-size: 0.8rem;
+  text-decoration: none;
   cursor: pointer;
   background: transparent;
   border: 2px solid var(--border);
