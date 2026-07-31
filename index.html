@@ -3,8 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NBA Player Birthdays</title>
+<title>NBA Birthday Tracker – Today's & Upcoming Player Birthdays</title>
+<meta name="description" content="See which active NBA players have a birthday today or in the next 14 days. A well-known betting angle for player props, updated live from ESPN roster data.">
+<link rel="canonical" href="https://nbaplayerbirthdays.com/">
+<meta name="theme-color" content="#101216">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nbaplayerbirthdays.com/">
+<meta property="og:title" content="NBA Birthday Tracker">
+<meta property="og:description" content="See which active NBA players have a birthday today or in the next 14 days. A well-known betting angle for player props.">
+<meta property="og:image" content="https://nbaplayerbirthdays.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NBA Birthday Tracker">
+<meta name="twitter:description" content="See which active NBA players have a birthday today or in the next 14 days. A well-known betting angle for player props.">
+<meta name="twitter:image" content="https://nbaplayerbirthdays.com/og-image.png">
+
 <link rel="stylesheet" href="style.css?v=3">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "NBA Birthday Tracker",
+  "url": "https://nbaplayerbirthdays.com/",
+  "description": "Tracks active NBA players' birthdays, sourced live from current team rosters."
+}
+</script>
 </head>
 <body>
   <header>
@@ -15,6 +44,13 @@
       <button id="refreshBtn" class="refresh-btn" title="Refresh from ESPN now">⟳ Refresh</button>
     </p>
   </header>
+
+  <noscript>
+    <p style="max-width: 600px; margin: 24px auto; padding: 0 20px; color: #868e9c; text-align: center;">
+      This site needs JavaScript enabled to load live NBA roster and birthday data from ESPN.
+      Please enable JavaScript to see today's active NBA players' birthdays.
+    </p>
+  </noscript>
 
   <main>
     <section class="controls">
