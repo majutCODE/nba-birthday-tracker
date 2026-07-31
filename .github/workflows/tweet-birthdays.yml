@@ -2,10 +2,12 @@ name: Tweet NBA birthdays
 
 on:
   schedule:
-    # 12:00 UTC ≈ 8:00am US Eastern (7:00am during EST in winter).
+    # 22:00 UTC ≈ 6:00pm US Eastern (5:00pm during EST in winter, since
+    # cron here is fixed UTC and doesn't shift for US daylight saving).
     # The script itself computes "today" in America/New_York regardless of
-    # exactly when this fires, so a small DST drift doesn't cause wrong dates.
-    - cron: "0 12 * * *"
+    # exactly when this fires, so the DST drift only affects the clock time
+    # it posts at, not which date's birthdays it reports.
+    - cron: "0 22 * * *"
   workflow_dispatch: {} # lets you trigger a run manually from the Actions tab
 
 jobs:
