@@ -63,29 +63,39 @@ def get_us_today():
     return now.month, now.day
 
 
+FOOTER = "Betting angle: birthday-game scoring bumps. #NBA #NBAProps #SportsBetting"
+
+
 def build_tweet(todays_players, month, day):
     date_str = f"{MONTH_NAMES[month - 1]} {day}"
-    header = f"NBA birthdays today ({date_str}, US ET):"
+    header = f"\U0001F3C0\U0001F382 NBA birthdays today ({date_str}, US ET):"
     lines = [f"- {p['name']} ({p['team']})" for p in todays_players]
 
-    tweet = header + "\n" + "\n".join(lines)
-    if len(tweet) <= TWEET_MAX_LEN:
-        return tweet
+    body = header + "\n" + "\n".join(lines)
 
-    # Too long for one tweet (many players share a birthday) — truncate the
-    # list and note how many more, rather than dropping the header or splitting
-    # into a thread.
-    kept = []
-    for line in lines:
-        candidate = header + "\n" + "\n".join(kept + [line])
-        remaining = len(lines) - len(kept) - 1
+    if len(body) > TWEET_MAX_LEN:
+        # Too long for one tweet (many players share a birthday) — truncate
+        # the list and note how many more, rather than dropping the header
+        # or splitting into a thread. The player list is the actual value,
+        # so it takes priority over the footer below.
+        kept = []
+        for line in lines:
+            remaining = len(lines) - len(kept) - 1
+            suffix = f"\n+{remaining} more" if remaining > 0 else ""
+            candidate = header + "\n" + "\n".join(kept + [line]) + suffix
+            if len(candidate) > TWEET_MAX_LEN:
+                break
+            kept.append(line)
+        remaining = len(lines) - len(kept)
         suffix = f"\n+{remaining} more" if remaining > 0 else ""
-        if len(candidate + suffix) > TWEET_MAX_LEN:
-            break
-        kept.append(line)
-    remaining = len(lines) - len(kept)
-    suffix = f"\n+{remaining} more" if remaining > 0 else ""
-    return header + "\n" + "\n".join(kept) + suffix
+        return header + "\n" + "\n".join(kept) + suffix
+
+    # Only tack on the keyword/hashtag footer if it fits without pushing us
+    # over the limit — it's a bonus for search reach, not core content.
+    with_footer = body + "\n\n" + FOOTER
+    if len(with_footer) <= TWEET_MAX_LEN:
+        return with_footer
+    return body
 
 
 def post_tweet(text):
