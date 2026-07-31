@@ -71,7 +71,7 @@ def build_tweet(todays_players, month, day):
 
     prop_word = "props" if len(todays_players) > 1 else "prop"
     hook = f"Will they hit the over on their points {prop_word}?"
-    cta = "Track other birthdays for sports betting — link in bio"
+    cta = "Track other birthdays for sports betting - link in bio"
     footer = hook + "\n\n" + cta
 
     full = player_block + "\n\n" + footer
