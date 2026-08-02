@@ -3,19 +3,34 @@ Posts a daily tweet listing active NBA players whose birthday it is today,
 using US Eastern Time as the reference date (matching how the NBA schedules
 games — see the main site's app.js for the same convention).
 
+GitHub's `schedule:` trigger is unreliable for a single once-a-day cron tick
+(it can be delayed by hours on lower-traffic repos), so this is designed to
+be invoked every 15 minutes instead. It only actually posts once it's the
+target hour in US Eastern time, and only once per day (tracked via
+last_posted.txt, committed back to the repo by the workflow) — every other
+invocation exits immediately without calling any API.
+
 Required environment variables (set as GitHub Actions secrets):
     X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET
 
 Set DRY_RUN=1 to print the tweet instead of posting it (no credentials
 needed in that mode) — useful for testing the data/formatting locally.
+
+A manual run (GITHUB_EVENT_NAME=workflow_dispatch, or no GITHUB_EVENT_NAME at
+all, i.e. running locally) always bypasses both the target-hour check and the
+already-posted-today check, so testing isn't blocked by either gate.
 """
 
 import os
 import sys
 from datetime import datetime
+from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import requests
+
+TARGET_HOUR_ET = 18  # 6pm ET — checked every 15 min, so any tick in this hour posts
+STATE_FILE = Path(__file__).parent / "last_posted.txt"
 
 TEAM_IDS = {
     1: "Atlanta Hawks", 2: "Boston Celtics", 17: "Brooklyn Nets", 30: "Charlotte Hornets",
@@ -58,9 +73,24 @@ def fetch_active_players():
     return players
 
 
-def get_us_today():
-    now = datetime.now(ZoneInfo("America/New_York"))
-    return now.month, now.day
+def get_us_now():
+    return datetime.now(ZoneInfo("America/New_York"))
+
+
+def is_manual_run():
+    # Defaults to True (bypass gates) when GITHUB_EVENT_NAME is unset, which
+    # covers running the script locally for testing.
+    return os.environ.get("GITHUB_EVENT_NAME", "workflow_dispatch") == "workflow_dispatch"
+
+
+def already_posted_today(today_str):
+    if not STATE_FILE.exists():
+        return False
+    return STATE_FILE.read_text().strip() == today_str
+
+
+def mark_posted_today(today_str):
+    STATE_FILE.write_text(today_str + "\n")
 
 
 def build_tweet(todays_players, month, day):
@@ -119,7 +149,19 @@ def post_tweet(text):
 
 
 def main():
-    month, day = get_us_today()
+    now_et = get_us_now()
+    month, day = now_et.month, now_et.day
+    today_str = now_et.strftime("%Y-%m-%d")
+    manual = is_manual_run()
+
+    if not manual:
+        if now_et.hour != TARGET_HOUR_ET:
+            print(f"Not the target hour yet ({now_et.hour}:00 ET, waiting for {TARGET_HOUR_ET}:00 ET). Skipping.")
+            return
+        if already_posted_today(today_str):
+            print(f"Already posted today ({today_str}). Skipping.")
+            return
+
     players = fetch_active_players()
     todays_players = sorted(
         (p for p in players if p["month"] == month and p["day"] == day),
@@ -128,6 +170,8 @@ def main():
 
     if not todays_players:
         print(f"No active-roster NBA birthdays today ({MONTH_NAMES[month - 1]} {day} US ET). Skipping post.")
+        if not manual:
+            mark_posted_today(today_str)
         return
 
     tweet = build_tweet(todays_players, month, day)
@@ -141,6 +185,8 @@ def main():
 
     result = post_tweet(tweet)
     print("Posted:", result)
+    if not manual:
+        mark_posted_today(today_str)
 
 
 if __name__ == "__main__":
