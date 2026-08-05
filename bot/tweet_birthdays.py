@@ -3,11 +3,11 @@ Posts a daily tweet listing active NBA players whose birthday it is today,
 using US Eastern Time as the reference date (matching how the NBA schedules
 games — see the main site's app.js for the same convention).
 
-GitHub's `schedule:` trigger is unreliable for a single once-a-day cron tick
-(it can be delayed by hours on lower-traffic repos), so this is designed to
-be invoked every 15 minutes instead. It only actually posts once it's the
-target hour in US Eastern time, and only once per day (tracked via
-last_posted.txt, committed back to the repo by the workflow) — every other
+GitHub's `schedule:` trigger is best-effort and heavily throttled on
+low-traffic repos: we ask for every 15 minutes and actually get roughly four
+runs a day at unpredictable hours. So this posts on the first run at or after
+6pm ET, rather than requiring an exact hour, and guards against repeats with
+last_posted.txt (committed back to the repo by the workflow). Every other
 invocation exits immediately without calling any API.
 
 Required environment variables (set as GitHub Actions secrets):
@@ -23,13 +23,19 @@ already-posted-today check, so testing isn't blocked by either gate.
 
 import os
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import requests
 
-TARGET_HOUR_ET = 18  # 6pm ET — checked every 15 min, so any tick in this hour posts
+# Post any time from 6pm ET onwards, not at exactly 18:00. GitHub throttles
+# scheduled workflows hard on low-traffic repos — we asked for every 15
+# minutes and actually get ~4 runs a day at unpredictable hours — so an
+# exact-hour match silently skipped whole days. A window means any run that
+# lands in the evening posts; the once-per-day guard below stops repeats.
+TARGET_HOUR_ET = 18
 STATE_FILE = Path(__file__).parent / "last_posted.txt"
 
 TEAM_IDS = {
@@ -51,13 +57,26 @@ MONTH_NAMES = [
 TWEET_MAX_LEN = 280
 
 
+def fetch_team_roster(session, team_id, attempts=3):
+    url = f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/{team_id}/roster"
+    for attempt in range(1, attempts + 1):
+        resp = session.get(url, timeout=15)
+        if resp.status_code == 200:
+            return resp.json()
+        if attempt < attempts:
+            time.sleep(2 * attempt)
+    resp.raise_for_status()
+
+
 def fetch_active_players():
+    # Deliberately no custom User-Agent header. ESPN's bot detection started
+    # returning 403 for our old "nba-birthday-bot/1.0" UA (verified: 4/4
+    # blocked with it, 4/4 fine without), which broke the whole run.
+    session = requests.Session()
+
     players = []
     for team_id, team_name in TEAM_IDS.items():
-        url = f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/{team_id}/roster"
-        resp = requests.get(url, headers={"User-Agent": "nba-birthday-bot/1.0"}, timeout=15)
-        resp.raise_for_status()
-        data = resp.json()
+        data = fetch_team_roster(session, team_id)
         for athlete in data.get("athletes", []):
             dob = athlete.get("dateOfBirth")
             if not dob:
@@ -155,11 +174,11 @@ def main():
     manual = is_manual_run()
 
     if not manual:
-        if now_et.hour != TARGET_HOUR_ET:
-            print(f"Not the target hour yet ({now_et.hour}:00 ET, waiting for {TARGET_HOUR_ET}:00 ET). Skipping.")
-            return
         if already_posted_today(today_str):
             print(f"Already posted today ({today_str}). Skipping.")
+            return
+        if now_et.hour < TARGET_HOUR_ET:
+            print(f"Too early ({now_et.hour}:00 ET, posting from {TARGET_HOUR_ET}:00 ET onwards). Skipping.")
             return
 
     players = fetch_active_players()
