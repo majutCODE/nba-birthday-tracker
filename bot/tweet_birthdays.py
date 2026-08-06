@@ -21,6 +21,7 @@ all, i.e. running locally) always bypasses both the target-hour check and the
 already-posted-today check, so testing isn't blocked by either gate.
 """
 
+import json
 import os
 import sys
 import time
@@ -68,6 +69,28 @@ def fetch_team_roster(session, team_id, attempts=3):
     resp.raise_for_status()
 
 
+def load_bundled_players():
+    """Fall back to the snapshot the website ships with.
+
+    ESPN blocks requests from some IPs (its bot detection is stricter on
+    datacenter ranges like GitHub's runners), and a missed tweet is worse
+    than a slightly stale roster — birthdays never change, only team
+    affiliations do.
+    """
+    path = Path(__file__).parent.parent / "data" / "players.json"
+    players = []
+    for p in json.loads(path.read_text()):
+        teams = p.get("teams") or []
+        players.append({
+            "name": p["name"],
+            "team": teams[0] if teams else "",
+            "month": p["month"],
+            "day": p["day"],
+            "year": p["year"],
+        })
+    return players
+
+
 def fetch_active_players():
     # Deliberately no custom User-Agent header. ESPN's bot detection started
     # returning 403 for our old "nba-birthday-bot/1.0" UA (verified: 4/4
@@ -75,20 +98,28 @@ def fetch_active_players():
     session = requests.Session()
 
     players = []
-    for team_id, team_name in TEAM_IDS.items():
-        data = fetch_team_roster(session, team_id)
-        for athlete in data.get("athletes", []):
-            dob = athlete.get("dateOfBirth")
-            if not dob:
-                continue
-            year, month, day = (int(x) for x in dob[:10].split("-"))
-            players.append({
-                "name": athlete.get("fullName") or athlete.get("displayName"),
-                "team": team_name,
-                "month": month,
-                "day": day,
-                "year": year,
-            })
+    try:
+        for team_id, team_name in TEAM_IDS.items():
+            data = fetch_team_roster(session, team_id)
+            for athlete in data.get("athletes", []):
+                dob = athlete.get("dateOfBirth")
+                if not dob:
+                    continue
+                year, month, day = (int(x) for x in dob[:10].split("-"))
+                players.append({
+                    "name": athlete.get("fullName") or athlete.get("displayName"),
+                    "team": team_name,
+                    "month": month,
+                    "day": day,
+                    "year": year,
+                })
+    except Exception as exc:
+        print(f"Live ESPN fetch failed ({exc}); using bundled snapshot instead.")
+        return load_bundled_players()
+
+    if not players:
+        print("Live ESPN fetch returned no players; using bundled snapshot instead.")
+        return load_bundled_players()
     return players
 
 

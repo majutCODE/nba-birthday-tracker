@@ -2,18 +2,22 @@ name: Tweet NBA birthdays
 
 on:
   schedule:
-    # Runs every 15 minutes rather than once a day at a fixed UTC time.
-    # GitHub's schedule trigger can be delayed by hours on lower-traffic
-    # repos (we saw a once-daily 22:00 UTC cron actually firing around
-    # 07:36-07:40 UTC instead) — frequent schedules get processed far more
-    # reliably. The script itself only actually posts once it's the target
-    # hour in US Eastern time, and only once per day, so almost all of
-    # these invocations exit immediately without calling any API.
-    - cron: "*/15 * * * *"
+    # Hourly across the evening ET window (22:00-03:00 UTC == 18:00-23:00
+    # EDT), not every 15 minutes. Polling every 15 min queued ~96 runs/day
+    # and GitHub started cancelling them before they ever picked up a
+    # runner, which is what produced the failure emails. Six well-spaced
+    # runs get honored far more reliably; the script posts on the first one
+    # at or after 6pm ET and the once-per-day guard ignores the rest.
+    - cron: "0 22,23,0,1,2,3 * * *"
   workflow_dispatch: {} # lets you trigger a run manually from the Actions tab, bypassing the time/once-per-day gates
 
 permissions:
   contents: write # needed to commit bot/last_posted.txt back to the repo
+
+concurrency:
+  # Never let two runs race on the last_posted.txt commit.
+  group: tweet-birthdays
+  cancel-in-progress: false
 
 jobs:
   tweet:
