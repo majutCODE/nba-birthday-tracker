@@ -178,6 +178,10 @@ def build_tweet(todays_players, month, day):
     return header + "\n\n" + "\n".join(kept) + suffix
 
 
+class DuplicateTweet(Exception):
+    """X rejected the post because we already tweeted this exact text."""
+
+
 def post_tweet(text):
     from requests_oauthlib import OAuth1
 
@@ -194,6 +198,12 @@ def post_tweet(text):
         timeout=15,
     )
     if resp.status_code >= 300:
+        # Safety net for a cache miss: if the state file is lost, a later run
+        # in the same evening window retries the identical text and X rejects
+        # it. That means the tweet is already up, so it's a success for our
+        # purposes — not something worth failing the build (and emailing) over.
+        if resp.status_code == 403 and "duplicate content" in resp.text.lower():
+            raise DuplicateTweet(resp.text)
         raise RuntimeError(f"X API error {resp.status_code}: {resp.text}")
     return resp.json()
 
@@ -233,8 +243,12 @@ def main():
         print("DRY_RUN=1 set, not posting.")
         return
 
-    result = post_tweet(tweet)
-    print("Posted:", result)
+    try:
+        result = post_tweet(tweet)
+        print("Posted:", result)
+    except DuplicateTweet:
+        print("X reports this exact tweet already exists - treating as already posted today.")
+
     if not manual:
         mark_posted_today(today_str)
 

@@ -12,10 +12,10 @@ on:
   workflow_dispatch: {} # lets you trigger a run manually from the Actions tab, bypassing the time/once-per-day gates
 
 permissions:
-  contents: write # needed to commit bot/last_posted.txt back to the repo
+  contents: read # read-only: this workflow no longer writes to the repo
 
 concurrency:
-  # Never let two runs race on the last_posted.txt commit.
+  # Never let two runs race on the shared "already posted" state.
   group: tweet-birthdays
   cancel-in-progress: false
 
@@ -29,6 +29,19 @@ jobs:
         with:
           python-version: "3.12"
 
+      # State lives in the Actions cache, NOT a commit to main. Committing
+      # last_posted.txt back to main retriggered the GitHub Pages build on
+      # every post, and overlapping Pages builds cancel each other, which
+      # generated "workflow cancelled" emails. restore-keys does prefix
+      # matching and returns the most recently created match, so each run
+      # restores whatever the previous run saved.
+      - name: Restore last-posted state
+        uses: actions/cache/restore@v4
+        with:
+          path: bot/last_posted.txt
+          key: last-posted-${{ github.run_id }}
+          restore-keys: last-posted-
+
       - name: Install dependencies
         run: pip install -r bot/requirements.txt
 
@@ -41,19 +54,9 @@ jobs:
           GITHUB_EVENT_NAME: ${{ github.event_name }}
         run: python bot/tweet_birthdays.py
 
-      - name: Commit last_posted.txt if it changed
-        if: github.event_name != 'workflow_dispatch'
-        run: |
-          # git status --porcelain (not git diff) — the state file starts out
-          # untracked, and git diff reports nothing for untracked files, so
-          # the original check never fired and the file was never persisted.
-          if [ -n "$(git status --porcelain bot/last_posted.txt)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add bot/last_posted.txt
-            git commit -m "Record today's birthday tweet as posted [skip ci]"
-            git pull --rebase --autostash
-            git push
-          else
-            echo "No change to bot/last_posted.txt, nothing to commit."
-          fi
+      - name: Save last-posted state
+        if: always() && github.event_name != 'workflow_dispatch'
+        uses: actions/cache/save@v4
+        with:
+          path: bot/last_posted.txt
+          key: last-posted-${{ github.run_id }}
