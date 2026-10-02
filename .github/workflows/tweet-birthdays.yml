@@ -61,28 +61,38 @@ jobs:
           path: bot/last_posted.txt
           key: last-posted-${{ github.run_id }}
 
-      # GitHub disables scheduled workflows after 60 days of repository
-      # inactivity. Until Aug 2026 the bot's own daily state commit kept the
-      # repo active; moving that state into the cache (to stop the Pages
-      # rebuild emails) silently removed the only recurring activity, and
-      # GitHub duly warned the schedule was about to be switched off.
+      # Two jobs in one, because they want the same cadence:
       #
-      # So: one empty commit a month. Enough to reset the 60-day clock with
-      # plenty of slack, rare enough that the Pages rebuild it triggers is a
-      # non-event, and it piggybacks on this workflow, which demonstrably
-      # does run, rather than on a separate schedule that might be throttled.
-      - name: Keep repository active
+      # 1. data/players.json is the offline fallback for the bot and the
+      #    website, and it silently rots as players change teams (by Oct
+      #    2026 the Aug snapshot had 54 players on the wrong team).
+      # 2. GitHub disables scheduled workflows after 60 days of repository
+      #    inactivity. Until Aug 2026 the bot's daily state commit kept the
+      #    repo active; moving that state into the cache removed the only
+      #    recurring activity and GitHub warned the schedule was about to
+      #    be switched off.
+      #
+      # Refreshing the snapshot monthly produces a commit, which resets the
+      # 60-day clock with plenty of slack. --allow-empty means we still get
+      # that commit when no roster actually changed. It rides on this
+      # workflow, which demonstrably runs, rather than a separate schedule
+      # GitHub might throttle.
+      - name: Refresh roster snapshot and keep repository active
         if: github.event_name == 'schedule'
-        continue-on-error: true # a failed keep-alive must never fail the tweet job
+        continue-on-error: true # must never fail the tweet job
         run: |
           age_days=$(( ( $(date +%s) - $(git log -1 --format=%ct) ) / 86400 ))
           echo "Last commit was ${age_days} day(s) ago."
-          if [ "$age_days" -ge 30 ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git commit --allow-empty -m "Keep scheduled workflow alive (GitHub disables it after 60 days idle)"
-            git push
-            echo "Pushed keep-alive commit."
-          else
-            echo "Recent enough; no keep-alive commit needed."
+          if [ "$age_days" -lt 30 ]; then
+            echo "Recent enough; nothing to do."
+            exit 0
           fi
+          # A failed refresh leaves the old snapshot in place; still commit
+          # so the schedule stays alive.
+          python bot/refresh_snapshot.py || echo "Snapshot refresh failed; keeping the existing file."
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/players.json
+          git commit --allow-empty -m "Refresh roster snapshot [skip ci]"
+          git push
+          echo "Pushed."
