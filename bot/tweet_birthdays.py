@@ -69,56 +69,6 @@ def fetch_team_roster(session, team_id, attempts=3):
     resp.raise_for_status()
 
 
-def fetch_free_agents(session, known_ids):
-    """Add unsigned players, who appear on no team roster.
-
-    Team roster endpoints only return rostered players, so free agents are
-    invisible to them — that's how DeMar DeRozan's birthday got missed. The
-    league athlete index does include them, so we diff it against the roster
-    IDs and look up only the handful that aren't accounted for (~70), rather
-    than re-fetching every player.
-    """
-    ids = []
-    page = 1
-    while True:
-        url = (
-            "https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/"
-            f"athletes?limit=100&page={page}"
-        )
-        data = session.get(url, timeout=15).json()
-        for item in data.get("items", []):
-            ids.append(item["$ref"].split("/athletes/")[1].split("?")[0])
-        if page >= data.get("pageCount", 1):
-            break
-        page += 1
-
-    players = []
-    for athlete_id in (i for i in ids if i not in known_ids):
-        url = (
-            "https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/"
-            f"athletes/{athlete_id}?lang=en&region=us"
-        )
-        resp = session.get(url, timeout=15)
-        if resp.status_code != 200:
-            continue
-        athlete = resp.json()
-        # "Inactive" here means out of the league, not injured — skip those.
-        if (athlete.get("status") or {}).get("name") != "Free Agent":
-            continue
-        dob = athlete.get("dateOfBirth")
-        if not dob:
-            continue
-        year, month, day = (int(x) for x in dob[:10].split("-"))
-        players.append({
-            "name": athlete.get("displayName"),
-            "team": "Free Agent",
-            "month": month,
-            "day": day,
-            "year": year,
-        })
-    return players
-
-
 def load_bundled_players():
     """Fall back to the snapshot the website ships with.
 
@@ -131,9 +81,14 @@ def load_bundled_players():
     players = []
     for p in json.loads(path.read_text()):
         teams = p.get("teams") or []
+        team = teams[0] if teams else ""
+        # Belt and braces: we only tweet rostered players, and an older
+        # snapshot may still contain free agents.
+        if not team or team == "Free Agent":
+            continue
         players.append({
             "name": p["name"],
-            "team": teams[0] if teams else "",
+            "team": team,
             "month": p["month"],
             "day": p["day"],
             "year": p["year"],
@@ -148,12 +103,10 @@ def fetch_active_players():
     session = requests.Session()
 
     players = []
-    roster_ids = set()
     try:
         for team_id, team_name in TEAM_IDS.items():
             data = fetch_team_roster(session, team_id)
             for athlete in data.get("athletes", []):
-                roster_ids.add(str(athlete.get("id")))
                 dob = athlete.get("dateOfBirth")
                 if not dob:
                     continue
@@ -169,14 +122,7 @@ def fetch_active_players():
         print(f"Live ESPN fetch failed ({exc}); using bundled snapshot instead.")
         return load_bundled_players()
 
-    # Free agents are a bonus, not load-bearing: if this lookup fails we still
-    # want the rostered players' birthdays to go out.
-    try:
-        free_agents = fetch_free_agents(session, roster_ids)
-        print(f"Fetched {len(players)} rostered players + {len(free_agents)} free agents.")
-        players.extend(free_agents)
-    except Exception as exc:
-        print(f"Free-agent lookup failed ({exc}); continuing with rostered players only.")
+    print(f"Fetched {len(players)} rostered players.")
 
     if not players:
         print("Live ESPN fetch returned no players; using bundled snapshot instead.")

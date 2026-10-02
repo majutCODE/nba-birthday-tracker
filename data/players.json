@@ -24,7 +24,7 @@
 "Indiana Pacers"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "22",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2580365.png"
 },
 {
@@ -38,7 +38,7 @@
 "Atlanta Hawks"
 ],
 "position": "G",
-"jersey": "21",
+"jersey": "2",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397183.png"
 },
 {
@@ -56,20 +56,6 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683021.png"
 },
 {
-"id": "",
-"name": "Doug McDermott",
-"dob": "1992-01-03",
-"month": 1,
-"day": 3,
-"year": 1992,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
 "id": "5149077",
 "name": "Kingston Flemings",
 "dob": "2007-01-03",
@@ -80,7 +66,7 @@
 "Atlanta Hawks"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "4",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5149077.png"
 },
 {
@@ -94,22 +80,8 @@
 "Los Angeles Lakers"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "10",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277811.png"
-},
-{
-"id": "4684275",
-"name": "Rob Dillingham",
-"dob": "2005-01-04",
-"month": 1,
-"day": 4,
-"year": 2005,
-"teams": [
-"Chicago Bulls"
-],
-"position": "G",
-"jersey": "7",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684275.png"
 },
 {
 "id": "5104157",
@@ -136,22 +108,22 @@
 "Phoenix Suns"
 ],
 "position": "F",
-"jersey": "22",
+"jersey": "21",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702602.png"
 },
 {
-"id": "4397071",
-"name": "Mac McClung",
-"dob": "1999-01-06",
+"id": "4431828",
+"name": "KJ Martin",
+"dob": "2001-01-06",
 "month": 1,
 "day": 6,
-"year": 1999,
+"year": 2001,
 "teams": [
-"Chicago Bulls"
+"Minnesota Timberwolves"
 ],
-"position": "G",
-"jersey": "5",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397071.png"
+"position": "F",
+"jersey": "99",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431828.png"
 },
 {
 "id": "2578239",
@@ -206,7 +178,7 @@
 "Denver Nuggets"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "7",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4698719.png"
 },
 {
@@ -220,7 +192,7 @@
 "Cleveland Cavaliers"
 ],
 "position": "C",
-"jersey": "",
+"jersey": "39",
 "headshot": ""
 },
 {
@@ -234,22 +206,8 @@
 "Brooklyn Nets"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "1",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702177.png"
-},
-{
-"id": "",
-"name": "Tony Bradley",
-"dob": "1998-01-08",
-"month": 1,
-"day": 8,
-"year": 1998,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "4395626",
@@ -266,18 +224,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395626.png"
 },
 {
-"id": "",
+"id": "4433623",
 "name": "Caleb Houstan",
 "dob": "2003-01-09",
 "month": 1,
 "day": 9,
 "year": 2003,
 "teams": [
-"Free Agent"
+"New Orleans Pelicans"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "F",
+"jersey": "33",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433623.png"
 },
 {
 "id": "4431690",
@@ -318,21 +276,49 @@
 "Dallas Mavericks"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "34",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593125.png"
 },
 {
-"id": "",
-"name": "Xavier Tillman",
-"dob": "1999-01-12",
+"id": "5107264",
+"name": "Marquel Sutton",
+"dob": "2003-01-11",
 "month": 1,
-"day": 12,
-"year": 1999,
+"day": 11,
+"year": 2003,
 "teams": [
-"Free Agent"
+"Chicago Bulls"
 ],
-"position": "",
-"jersey": "",
+"position": "F",
+"jersey": "0",
+"headshot": ""
+},
+{
+"id": "4997530",
+"name": "Khalifa Diop",
+"dob": "2002-01-15",
+"month": 1,
+"day": 15,
+"year": 2002,
+"teams": [
+"Cleveland Cavaliers"
+],
+"position": "C",
+"jersey": "18",
+"headshot": ""
+},
+{
+"id": "4683857",
+"name": "Kobe Johnson",
+"dob": "2003-01-15",
+"month": 1,
+"day": 15,
+"year": 2003,
+"teams": [
+"Atlanta Hawks"
+],
+"position": "G",
+"jersey": "12",
 "headshot": ""
 },
 {
@@ -430,7 +416,7 @@
 "Phoenix Suns"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "18",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5041953.png"
 },
 {
@@ -444,7 +430,7 @@
 "Milwaukee Bucks"
 ],
 "position": "G",
-"jersey": "14",
+"jersey": "11",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395725.png"
 },
 {
@@ -546,18 +532,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432822.png"
 },
 {
-"id": "5234862",
-"name": "Jack Kayil",
-"dob": "2006-01-27",
+"id": "4696317",
+"name": "Miles Kelly",
+"dob": "2003-01-26",
 "month": 1,
-"day": 27,
-"year": 2006,
+"day": 26,
+"year": 2003,
 "teams": [
-"New York Knicks"
+"Golden State Warriors"
 ],
 "position": "G",
-"jersey": "",
-"headshot": ""
+"jersey": "26",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4696317.png"
 },
 {
 "id": "4702745",
@@ -574,17 +560,17 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702745.png"
 },
 {
-"id": "",
-"name": "Lucas Williamson",
-"dob": "1999-01-28",
+"id": "5109790",
+"name": "Christoph Tilly",
+"dob": "2003-01-28",
 "month": 1,
 "day": 28,
-"year": 1999,
+"year": 2003,
 "teams": [
-"Free Agent"
+"Oklahoma City Thunder"
 ],
-"position": "",
-"jersey": "",
+"position": "C",
+"jersey": "33",
 "headshot": ""
 },
 {
@@ -612,7 +598,7 @@
 "Dallas Mavericks"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "13",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5148538.png"
 },
 {
@@ -628,20 +614,6 @@
 "position": "F",
 "jersey": "4",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5142718.png"
-},
-{
-"id": "",
-"name": "Maxi Kleber",
-"dob": "1992-01-29",
-"month": 1,
-"day": 29,
-"year": 1992,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "4684740",
@@ -682,7 +654,7 @@
 "Chicago Bulls"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "19",
 "headshot": ""
 },
 {
@@ -714,17 +686,31 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5142621.png"
 },
 {
-"id": "",
+"id": "3914285",
 "name": "Drew Eubanks",
 "dob": "1997-02-01",
 "month": 2,
 "day": 1,
 "year": 1997,
 "teams": [
-"Free Agent"
+"New York Knicks"
 ],
-"position": "",
-"jersey": "",
+"position": "F",
+"jersey": "19",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3914285.png"
+},
+{
+"id": "5116468",
+"name": "Andrew Holifield",
+"dob": "2004-02-02",
+"month": 2,
+"day": 2,
+"year": 2004,
+"teams": [
+"Oklahoma City Thunder"
+],
+"position": "F",
+"jersey": "17",
 "headshot": ""
 },
 {
@@ -738,7 +724,7 @@
 "Philadelphia 76ers"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "31",
 "headshot": ""
 },
 {
@@ -752,7 +738,7 @@
 "Detroit Pistons"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "94",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397449.png"
 },
 {
@@ -780,7 +766,7 @@
 "LA Clippers"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "1",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5254165.png"
 },
 {
@@ -805,11 +791,25 @@
 "day": 3,
 "year": 2001,
 "teams": [
-"Charlotte Hornets"
+"Washington Wizards"
 ],
 "position": "G",
-"jersey": "23",
+"jersey": "1",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432819.png"
+},
+{
+"id": "4712862",
+"name": "Malik Dia",
+"dob": "2004-02-04",
+"month": 2,
+"day": 4,
+"year": 2004,
+"teams": [
+"New Orleans Pelicans"
+],
+"position": "F",
+"jersey": "8",
+"headshot": ""
 },
 {
 "id": "4066262",
@@ -850,7 +850,7 @@
 "Los Angeles Lakers"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "55",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3155535.png"
 },
 {
@@ -864,7 +864,7 @@
 "LA Clippers"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "18",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5075626.png"
 },
 {
@@ -875,10 +875,10 @@
 "day": 8,
 "year": 1990,
 "teams": [
-"Dallas Mavericks"
+"Miami Heat"
 ],
 "position": "G",
-"jersey": "31",
+"jersey": "",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6475.png"
 },
 {
@@ -948,7 +948,7 @@
 "Sacramento Kings"
 ],
 "position": "G",
-"jersey": "5",
+"jersey": "10",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702384.png"
 },
 {
@@ -976,22 +976,8 @@
 "Dallas Mavericks"
 ],
 "position": "G",
-"jersey": "00",
+"jersey": "0",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432582.png"
-},
-{
-"id": "5358755",
-"name": "Vsevolod Ishchenko",
-"dob": "2005-02-10",
-"month": 2,
-"day": 10,
-"year": 2005,
-"teams": [
-"Dallas Mavericks"
-],
-"position": "G",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "5144126",
@@ -1022,20 +1008,6 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683688.png"
 },
 {
-"id": "4397821",
-"name": "Nate Williams",
-"dob": "1999-02-12",
-"month": 2,
-"day": 12,
-"year": 1999,
-"teams": [
-"Golden State Warriors"
-],
-"position": "G",
-"jersey": "19",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397821.png"
-},
-{
 "id": "3936099",
 "name": "Derrick Jones Jr.",
 "dob": "1997-02-15",
@@ -1064,20 +1036,6 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395651.png"
 },
 {
-"id": "",
-"name": "Tosan Evbuomwan",
-"dob": "2001-02-16",
-"month": 2,
-"day": 16,
-"year": 2001,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
 "id": "4432848",
 "name": "Jaime Jaquez Jr.",
 "dob": "2001-02-18",
@@ -1088,7 +1046,7 @@
 "Milwaukee Bucks"
 ],
 "position": "F",
-"jersey": "11",
+"jersey": "24",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432848.png"
 },
 {
@@ -1102,7 +1060,7 @@
 "Philadelphia 76ers"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "1",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2581018.png"
 },
 {
@@ -1134,6 +1092,20 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397233.png"
 },
 {
+"id": "3999",
+"name": "James Johnson",
+"dob": "1987-02-20",
+"month": 2,
+"day": 20,
+"year": 1987,
+"teams": [
+"Indiana Pacers"
+],
+"position": "F",
+"jersey": "16",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3999.png"
+},
+{
 "id": "4683778",
 "name": "Jared McCain",
 "dob": "2004-02-20",
@@ -1148,18 +1120,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683778.png"
 },
 {
-"id": "4278046",
-"name": "Olivier Sarr",
-"dob": "1999-02-20",
+"id": "4704043",
+"name": "Steve Settle III",
+"dob": "2001-02-20",
 "month": 2,
 "day": 20,
-"year": 1999,
+"year": 2001,
 "teams": [
-"Cleveland Cavaliers"
+"Washington Wizards"
 ],
 "position": "F",
-"jersey": "33",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278046.png"
+"jersey": "14",
+"headshot": ""
 },
 {
 "id": "4701225",
@@ -1186,8 +1158,22 @@
 "Utah Jazz"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "0",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683933.png"
+},
+{
+"id": "2583639",
+"name": "Elfrid Payton",
+"dob": "1994-02-22",
+"month": 2,
+"day": 22,
+"year": 1994,
+"teams": [
+"Sacramento Kings"
+],
+"position": "G",
+"jersey": "3",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2583639.png"
 },
 {
 "id": "4431684",
@@ -1216,20 +1202,6 @@
 "position": "F",
 "jersey": "22",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3059319.png"
-},
-{
-"id": "3136776",
-"name": "D'Angelo Russell",
-"dob": "1996-02-23",
-"month": 2,
-"day": 23,
-"year": 1996,
-"teams": [
-"Memphis Grizzlies"
-],
-"position": "G",
-"jersey": "",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136776.png"
 },
 {
 "id": "5105565",
@@ -1312,7 +1284,7 @@
 "Milwaukee Bucks"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "19",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4697268.png"
 },
 {
@@ -1326,7 +1298,7 @@
 "Cleveland Cavaliers"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "33",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2995706.png"
 },
 {
@@ -1344,32 +1316,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701233.png"
 },
 {
-"id": "4279118",
-"name": "Keaton Wallace",
-"dob": "1999-02-26",
-"month": 2,
-"day": 26,
-"year": 1999,
-"teams": [
-"Atlanta Hawks"
-],
-"position": "G",
-"jersey": "2",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4279118.png"
-},
-{
-"id": "",
+"id": "4703421",
 "name": "Taelon Peter",
 "dob": "2002-02-27",
 "month": 2,
 "day": 27,
 "year": 2002,
 "teams": [
-"Free Agent"
+"San Antonio Spurs"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "G",
+"jersey": "8",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4703421.png"
 },
 {
 "id": "2991350",
@@ -1412,6 +1370,34 @@
 "position": "G",
 "jersey": "0",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396993.png"
+},
+{
+"id": "4433599",
+"name": "Arthur Kaluma",
+"dob": "2002-03-01",
+"month": 3,
+"day": 1,
+"year": 2002,
+"teams": [
+"Los Angeles Lakers"
+],
+"position": "F",
+"jersey": "47",
+"headshot": ""
+},
+{
+"id": "5107258",
+"name": "William Kyle III",
+"dob": "2004-03-01",
+"month": 3,
+"day": 1,
+"year": 2004,
+"teams": [
+"Los Angeles Lakers"
+],
+"position": "F",
+"jersey": "45",
+"headshot": ""
 },
 {
 "id": "4684208",
@@ -1484,6 +1470,20 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5175643.png"
 },
 {
+"id": "4398356",
+"name": "Gabe McGlothan",
+"dob": "1999-03-03",
+"month": 3,
+"day": 3,
+"year": 1999,
+"teams": [
+"Boston Celtics"
+],
+"position": "F",
+"jersey": "41",
+"headshot": ""
+},
+{
 "id": "4065648",
 "name": "Jayson Tatum",
 "dob": "1998-03-03",
@@ -1550,7 +1550,7 @@
 "Los Angeles Lakers"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "26",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3907498.png"
 },
 {
@@ -1566,20 +1566,6 @@
 "position": "F",
 "jersey": "1",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278355.png"
-},
-{
-"id": "",
-"name": "Mason Plumlee",
-"dob": "1990-03-05",
-"month": 3,
-"day": 5,
-"year": 1990,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "3062679",
@@ -1606,7 +1592,7 @@
 "Houston Rockets"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "36",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2990992.png"
 },
 {
@@ -1652,20 +1638,6 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5238230.png"
 },
 {
-"id": "",
-"name": "Tyrese Martin",
-"dob": "1999-03-07",
-"month": 3,
-"day": 7,
-"year": 1999,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
 "id": "5107968",
 "name": "Ja'Kobi Gillespie",
 "dob": "2004-03-10",
@@ -1676,22 +1648,8 @@
 "San Antonio Spurs"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "17",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107968.png"
-},
-{
-"id": "4433629",
-"name": "Ryan Nembhard",
-"dob": "2003-03-10",
-"month": 3,
-"day": 10,
-"year": 2003,
-"teams": [
-"Atlanta Hawks"
-],
-"position": "G",
-"jersey": "9",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433629.png"
 },
 {
 "id": "3064440",
@@ -1746,7 +1704,7 @@
 "Memphis Grizzlies"
 ],
 "position": "F",
-"jersey": "9",
+"jersey": "3",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991070.png"
 },
 {
@@ -1774,7 +1732,7 @@
 "Denver Nuggets"
 ],
 "position": "F",
-"jersey": "35",
+"jersey": "3",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277848.png"
 },
 {
@@ -1834,18 +1792,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4411057.png"
 },
 {
-"id": "",
+"id": "4683935",
 "name": "Blake Wesley",
 "dob": "2003-03-16",
 "month": 3,
 "day": 16,
 "year": 2003,
 "teams": [
-"Free Agent"
+"LA Clippers"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "G",
+"jersey": "20",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683935.png"
 },
 {
 "id": "4397189",
@@ -1911,11 +1869,25 @@
 "day": 18,
 "year": 2002,
 "teams": [
-"Atlanta Hawks"
+"Boston Celtics"
 ],
 "position": "G",
-"jersey": "22",
+"jersey": "99",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433188.png"
+},
+{
+"id": "4702670",
+"name": "Grant Nelson",
+"dob": "2002-03-18",
+"month": 3,
+"day": 18,
+"year": 2002,
+"teams": [
+"Brooklyn Nets"
+],
+"position": "F",
+"jersey": "16",
+"headshot": ""
 },
 {
 "id": "4017837",
@@ -1970,7 +1942,7 @@
 "Phoenix Suns"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "22",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066383.png"
 },
 {
@@ -1984,22 +1956,8 @@
 "Memphis Grizzlies"
 ],
 "position": "C",
-"jersey": "",
+"jersey": "41",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593016.png"
-},
-{
-"id": "3134932",
-"name": "John Konchar",
-"dob": "1996-03-22",
-"month": 3,
-"day": 22,
-"year": 1996,
-"teams": [
-"Utah Jazz"
-],
-"position": "G",
-"jersey": "55",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3134932.png"
 },
 {
 "id": "2990962",
@@ -2058,20 +2016,6 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2530530.png"
 },
 {
-"id": "4593041",
-"name": "David Roddy",
-"dob": "2001-03-27",
-"month": 3,
-"day": 27,
-"year": 2001,
-"teams": [
-"Denver Nuggets"
-],
-"position": "F",
-"jersey": "45",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593041.png"
-},
-{
 "id": "4433225",
 "name": "Tyler Kolek",
 "dob": "2001-03-27",
@@ -2110,7 +2054,7 @@
 "Atlanta Hawks"
 ],
 "position": "C",
-"jersey": "",
+"jersey": "13",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105571.png"
 },
 {
@@ -2121,10 +2065,10 @@
 "day": 28,
 "year": 1996,
 "teams": [
-"Cleveland Cavaliers"
+"LA Clippers"
 ],
 "position": "G",
-"jersey": "2",
+"jersey": "31",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065778.png"
 },
 {
@@ -2142,6 +2086,20 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4997538.png"
 },
 {
+"id": "4684443",
+"name": "Rafael Castro",
+"dob": "2003-03-30",
+"month": 3,
+"day": 30,
+"year": 2003,
+"teams": [
+"Houston Rockets"
+],
+"position": "C",
+"jersey": "00",
+"headshot": ""
+},
+{
 "id": "4431941",
 "name": "RayJ Dennis",
 "dob": "2001-03-30",
@@ -2152,8 +2110,22 @@
 "Atlanta Hawks"
 ],
 "position": "G",
-"jersey": "00",
+"jersey": "10",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431941.png"
+},
+{
+"id": "4432808",
+"name": "James Wiseman",
+"dob": "2001-03-31",
+"month": 3,
+"day": 31,
+"year": 2001,
+"teams": [
+"New York Knicks"
+],
+"position": "C",
+"jersey": "",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432808.png"
 },
 {
 "id": "3448",
@@ -2180,7 +2152,7 @@
 "Boston Celtics"
 ],
 "position": "C",
-"jersey": "",
+"jersey": "4",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4351852.png"
 },
 {
@@ -2208,7 +2180,7 @@
 "Charlotte Hornets"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "5",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5060701.png"
 },
 {
@@ -2226,6 +2198,20 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3149673.png"
 },
 {
+"id": "4431775",
+"name": "Seth Lundy",
+"dob": "2000-04-02",
+"month": 4,
+"day": 2,
+"year": 2000,
+"teams": [
+"Dallas Mavericks"
+],
+"position": "G",
+"jersey": "5",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431775.png"
+},
+{
 "id": "5081727",
 "name": "Sidy Cissoko",
 "dob": "2004-04-02",
@@ -2238,6 +2224,20 @@
 "position": "G",
 "jersey": "91",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5081727.png"
+},
+{
+"id": "4702784",
+"name": "J'Vonne Hadley",
+"dob": "2002-04-03",
+"month": 4,
+"day": 3,
+"year": 2002,
+"teams": [
+"Miami Heat"
+],
+"position": "F",
+"jersey": "",
+"headshot": ""
 },
 {
 "id": "4278077",
@@ -2306,7 +2306,7 @@
 "Portland Trail Blazers"
 ],
 "position": "C",
-"jersey": "11",
+"jersey": "9",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066399.png"
 },
 {
@@ -2320,7 +2320,7 @@
 "Oklahoma City Thunder"
 ],
 "position": "C",
-"jersey": "",
+"jersey": "15",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5174983.png"
 },
 {
@@ -2350,6 +2350,20 @@
 "position": "F",
 "jersey": "10",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5211175.png"
+},
+{
+"id": "5105817",
+"name": "Carson Cooper",
+"dob": "2004-04-09",
+"month": 4,
+"day": 9,
+"year": 2004,
+"teams": [
+"Memphis Grizzlies"
+],
+"position": "C",
+"jersey": "20",
+"headshot": ""
 },
 {
 "id": "3134916",
@@ -2390,7 +2404,7 @@
 "Detroit Pistons"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "23",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5258459.png"
 },
 {
@@ -2404,7 +2418,7 @@
 "Philadelphia 76ers"
 ],
 "position": "C",
-"jersey": "",
+"jersey": "55",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4871141.png"
 },
 {
@@ -2432,7 +2446,7 @@
 "Memphis Grizzlies"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "35",
 "headshot": ""
 },
 {
@@ -2516,7 +2530,7 @@
 "Chicago Bulls"
 ],
 "position": "C",
-"jersey": "",
+"jersey": "9",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278067.png"
 },
 {
@@ -2544,21 +2558,21 @@
 "Denver Nuggets"
 ],
 "position": "G",
-"jersey": "3",
+"jersey": "1",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432181.png"
 },
 {
-"id": "",
-"name": "Nick Smith Jr.",
-"dob": "2004-04-18",
+"id": "4684269",
+"name": "Kylan Boswell",
+"dob": "2005-04-18",
 "month": 4,
 "day": 18,
-"year": 2004,
+"year": 2005,
 "teams": [
-"Free Agent"
+"Charlotte Hornets"
 ],
-"position": "",
-"jersey": "",
+"position": "G",
+"jersey": "18",
 "headshot": ""
 },
 {
@@ -2576,20 +2590,6 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4897943.png"
 },
 {
-"id": "",
-"name": "Kelly Olynyk",
-"dob": "1991-04-19",
-"month": 4,
-"day": 19,
-"year": 1991,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
 "id": "4397020",
 "name": "Luguentz Dort",
 "dob": "1999-04-19",
@@ -2600,7 +2600,7 @@
 "Atlanta Hawks"
 ],
 "position": "G",
-"jersey": "5",
+"jersey": "0",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397020.png"
 },
 {
@@ -2614,7 +2614,7 @@
 "Washington Wizards"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "34",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105841.png"
 },
 {
@@ -2628,7 +2628,7 @@
 "Milwaukee Bucks"
 ],
 "position": "C",
-"jersey": "7",
+"jersey": "9",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105623.png"
 },
 {
@@ -2642,22 +2642,22 @@
 "LA Clippers"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "12",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105832.png"
 },
 {
-"id": "",
+"id": "4397018",
 "name": "Ochai Agbaji",
 "dob": "2000-04-20",
 "month": 4,
 "day": 20,
 "year": 2000,
 "teams": [
-"Free Agent"
+"New York Knicks"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "G",
+"jersey": "30",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397018.png"
 },
 {
 "id": "5106262",
@@ -2670,7 +2670,7 @@
 "Atlanta Hawks"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "20",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5106262.png"
 },
 {
@@ -2712,8 +2712,22 @@
 "Portland Trail Blazers"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "2",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593043.png"
+},
+{
+"id": "4909710",
+"name": "Phillip Wheeler",
+"dob": "2002-04-23",
+"month": 4,
+"day": 23,
+"year": 2002,
+"teams": [
+"Phoenix Suns"
+],
+"position": "F",
+"jersey": "",
+"headshot": ""
 },
 {
 "id": "5160992",
@@ -2739,8 +2753,8 @@
 "teams": [
 "Brooklyn Nets"
 ],
-"position": "F",
-"jersey": "",
+"position": "C",
+"jersey": "13",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3150844.png"
 },
 {
@@ -2751,10 +2765,10 @@
 "day": 26,
 "year": 2001,
 "teams": [
-"Houston Rockets"
+"Sacramento Kings"
 ],
 "position": "G",
-"jersey": "13",
+"jersey": "00",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592965.png"
 },
 {
@@ -2765,10 +2779,10 @@
 "day": 29,
 "year": 2002,
 "teams": [
-"New Orleans Pelicans"
+"Memphis Grizzlies"
 ],
 "position": "G",
-"jersey": "24",
+"jersey": "19",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683750.png"
 },
 {
@@ -2784,6 +2798,20 @@
 "position": "F",
 "jersey": "51",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5289900.png"
+},
+{
+"id": "4712902",
+"name": "Cameron Corhen",
+"dob": "2004-05-01",
+"month": 5,
+"day": 1,
+"year": 2004,
+"teams": [
+"Atlanta Hawks"
+],
+"position": "F",
+"jersey": "",
+"headshot": ""
 },
 {
 "id": "4433255",
@@ -2810,8 +2838,22 @@
 "Charlotte Hornets"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "22",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5281370.png"
+},
+{
+"id": "4897471",
+"name": "Saint Thomas",
+"dob": "2003-05-01",
+"month": 5,
+"day": 1,
+"year": 2003,
+"teams": [
+"Philadelphia 76ers"
+],
+"position": "F",
+"jersey": "19",
+"headshot": ""
 },
 {
 "id": "5106040",
@@ -2824,21 +2866,21 @@
 "Dallas Mavericks"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "33",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5106040.png"
 },
 {
 "id": "4898237",
 "name": "Bez Mbeng",
-"dob": "2002-05-02",
+"dob": "2003-05-02",
 "month": 5,
 "day": 2,
-"year": 2002,
+"year": 2003,
 "teams": [
-"Utah Jazz"
+"Miami Heat"
 ],
 "position": "G",
-"jersey": "21",
+"jersey": "",
 "headshot": ""
 },
 {
@@ -2866,8 +2908,22 @@
 "Utah Jazz"
 ],
 "position": "G",
-"jersey": "23",
+"jersey": "15",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433268.png"
+},
+{
+"id": "5159895",
+"name": "Yuki Kawamura",
+"dob": "2001-05-02",
+"month": 5,
+"day": 2,
+"year": 2001,
+"teams": [
+"LA Clippers"
+],
+"position": "G",
+"jersey": "17",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5159895.png"
 },
 {
 "id": "3155942",
@@ -2891,25 +2947,11 @@
 "day": 4,
 "year": 1993,
 "teams": [
-"Charlotte Hornets"
+"Atlanta Hawks"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "8",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2578185.png"
-},
-{
-"id": "4278516",
-"name": "Ethan Thompson",
-"dob": "1999-05-04",
-"month": 5,
-"day": 4,
-"year": 1999,
-"teams": [
-"Indiana Pacers"
-],
-"position": "G",
-"jersey": "55",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278516.png"
 },
 {
 "id": "4397140",
@@ -2924,6 +2966,20 @@
 "position": "G",
 "jersey": "7",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397140.png"
+},
+{
+"id": "5170949",
+"name": "Alex Toohey",
+"dob": "2004-05-05",
+"month": 5,
+"day": 5,
+"year": 2004,
+"teams": [
+"Golden State Warriors"
+],
+"position": "F",
+"jersey": "22",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5170949.png"
 },
 {
 "id": "5107173",
@@ -2954,20 +3010,6 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4222252.png"
 },
 {
-"id": "",
-"name": "Jonas Valanciunas",
-"dob": "1992-05-06",
-"month": 5,
-"day": 6,
-"year": 1992,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
 "id": "5060631",
 "name": "Adou Thiero",
 "dob": "2004-05-08",
@@ -2982,6 +3024,20 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5060631.png"
 },
 {
+"id": "4397134",
+"name": "Cole Swider",
+"dob": "1999-05-08",
+"month": 5,
+"day": 8,
+"year": 1999,
+"teams": [
+"Los Angeles Lakers"
+],
+"position": "F",
+"jersey": "41",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397134.png"
+},
+{
 "id": "4397014",
 "name": "Quentin Grimes",
 "dob": "2000-05-08",
@@ -2992,7 +3048,7 @@
 "Los Angeles Lakers"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "5",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397014.png"
 },
 {
@@ -3052,18 +3108,32 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3135046.png"
 },
 {
-"id": "",
+"id": "5176420",
 "name": "Hayden Gray",
 "dob": "2003-05-11",
 "month": 5,
 "day": 11,
 "year": 2003,
 "teams": [
-"Free Agent"
+"Boston Celtics"
 ],
-"position": "",
-"jersey": "",
+"position": "G",
+"jersey": "44",
 "headshot": ""
+},
+{
+"id": "4565201",
+"name": "Malaki Branham",
+"dob": "2003-05-12",
+"month": 5,
+"day": 12,
+"year": 2003,
+"teams": [
+"Orlando Magic"
+],
+"position": "F",
+"jersey": "12",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4565201.png"
 },
 {
 "id": "4277919",
@@ -3076,7 +3146,7 @@
 "Utah Jazz"
 ],
 "position": "C",
-"jersey": "11",
+"jersey": "44",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277919.png"
 },
 {
@@ -3164,6 +3234,20 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3102529.png"
 },
 {
+"id": "4278729",
+"name": "Jarkel Joiner",
+"dob": "1999-05-20",
+"month": 5,
+"day": 20,
+"year": 1999,
+"teams": [
+"Charlotte Hornets"
+],
+"position": "G",
+"jersey": "20",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278729.png"
+},
+{
 "id": "4610139",
 "name": "Jeremy Sochan",
 "dob": "2003-05-20",
@@ -3174,22 +3258,8 @@
 "Portland Trail Blazers"
 ],
 "position": "F",
-"jersey": "20",
+"jersey": "4",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4610139.png"
-},
-{
-"id": "5108969",
-"name": "Lajae Jones",
-"dob": "2004-05-21",
-"month": 5,
-"day": 21,
-"year": 2004,
-"teams": [
-"Golden State Warriors"
-],
-"position": "G",
-"jersey": "",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5108969.png"
 },
 {
 "id": "4431772",
@@ -3229,8 +3299,8 @@
 "teams": [
 "Memphis Grizzlies"
 ],
-"position": "F",
-"jersey": "",
+"position": "C",
+"jersey": "28",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432810.png"
 },
 {
@@ -3258,7 +3328,7 @@
 "Utah Jazz"
 ],
 "position": "C",
-"jersey": "",
+"jersey": "11",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397077.png"
 },
 {
@@ -3272,7 +3342,7 @@
 "Los Angeles Lakers"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "54",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278580.png"
 },
 {
@@ -3300,7 +3370,7 @@
 "Chicago Bulls"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "24",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2595516.png"
 },
 {
@@ -3342,7 +3412,7 @@
 "Brooklyn Nets"
 ],
 "position": "G",
-"jersey": "13",
+"jersey": "10",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5279130.png"
 },
 {
@@ -3472,6 +3542,20 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432165.png"
 },
 {
+"id": "4898010",
+"name": "Jaylin Sellers",
+"dob": "2003-06-03",
+"month": 6,
+"day": 3,
+"year": 2003,
+"teams": [
+"Chicago Bulls"
+],
+"position": "G",
+"jersey": "22",
+"headshot": ""
+},
+{
 "id": "4432586",
 "name": "Nate Bittle",
 "dob": "2003-06-03",
@@ -3486,6 +3570,20 @@
 "headshot": ""
 },
 {
+"id": "4277923",
+"name": "Zhaire Smith",
+"dob": "1999-06-04",
+"month": 6,
+"day": 4,
+"year": 1999,
+"teams": [
+"Oklahoma City Thunder"
+],
+"position": "G",
+"jersey": "40",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277923.png"
+},
+{
 "id": "2583632",
 "name": "Royce O'Neale",
 "dob": "1993-06-05",
@@ -3496,7 +3594,7 @@
 "Charlotte Hornets"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "00",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2583632.png"
 },
 {
@@ -3570,20 +3668,6 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133602.png"
 },
 {
-"id": "4432173",
-"name": "Sharife Cooper",
-"dob": "2001-06-11",
-"month": 6,
-"day": 11,
-"year": 2001,
-"teams": [
-"Washington Wizards"
-],
-"position": "G",
-"jersey": "13",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432173.png"
-},
-{
 "id": "3995",
 "name": "Jrue Holiday",
 "dob": "1990-06-12",
@@ -3608,36 +3692,22 @@
 "Portland Trail Blazers"
 ],
 "position": "C",
-"jersey": "",
+"jersey": "10",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592435.png"
 },
 {
-"id": "",
-"name": "Gabe Vincent",
-"dob": "1996-06-14",
-"month": 6,
-"day": 14,
-"year": 1996,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
-"id": "",
+"id": "4395650",
 "name": "Leaky Black",
 "dob": "1999-06-14",
 "month": 6,
 "day": 14,
 "year": 1999,
 "teams": [
-"Free Agent"
+"Sacramento Kings"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "F",
+"jersey": "19",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395650.png"
 },
 {
 "id": "4278562",
@@ -3696,18 +3766,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107157.png"
 },
 {
-"id": "",
-"name": "Amir Coffey",
-"dob": "1997-06-17",
+"id": "2990969",
+"name": "Georges Niang",
+"dob": "1993-06-17",
 "month": 6,
 "day": 17,
-"year": 1997,
+"year": 1993,
 "teams": [
-"Free Agent"
+"Golden State Warriors"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "F",
+"jersey": "32",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2990969.png"
 },
 {
 "id": "4395724",
@@ -3759,10 +3829,10 @@
 "day": 19,
 "year": 2002,
 "teams": [
-"LA Clippers"
+"New Orleans Pelicans"
 ],
 "position": "G",
-"jersey": "9",
+"jersey": "24",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683634.png"
 },
 {
@@ -3773,10 +3843,10 @@
 "day": 19,
 "year": 2000,
 "teams": [
-"San Antonio Spurs"
+"Denver Nuggets"
 ],
 "position": "F",
-"jersey": "14",
+"jersey": "8",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432872.png"
 },
 {
@@ -3792,20 +3862,6 @@
 "position": "G",
 "jersey": "3",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277956.png"
-},
-{
-"id": "",
-"name": "Omer Yurtseven",
-"dob": "1998-06-19",
-"month": 6,
-"day": 19,
-"year": 1998,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "4578893",
@@ -3843,7 +3899,7 @@
 "day": 20,
 "year": 2000,
 "teams": [
-"Atlanta Hawks"
+"New Orleans Pelicans"
 ],
 "position": "C",
 "jersey": "35",
@@ -3860,7 +3916,7 @@
 "Oklahoma City Thunder"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "13",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5106270.png"
 },
 {
@@ -3878,18 +3934,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4997536.png"
 },
 {
-"id": "",
+"id": "4431786",
 "name": "Keshad Johnson",
 "dob": "2001-06-23",
 "month": 6,
 "day": 23,
 "year": 2001,
 "teams": [
-"Free Agent"
+"Miami Heat"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "F",
+"jersey": "16",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431786.png"
 },
 {
 "id": "3913174",
@@ -3902,7 +3958,7 @@
 "Phoenix Suns"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "8",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3913174.png"
 },
 {
@@ -3918,20 +3974,6 @@
 "position": "G",
 "jersey": "15",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4711272.png"
-},
-{
-"id": "3986",
-"name": "Taj Gibson",
-"dob": "1985-06-24",
-"month": 6,
-"day": 24,
-"year": 1985,
-"teams": [
-"Memphis Grizzlies"
-],
-"position": "F",
-"jersey": "67",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3986.png"
 },
 {
 "id": "4900671",
@@ -3976,18 +4018,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066320.png"
 },
 {
-"id": "",
-"name": "Max Shulga",
-"dob": "2002-06-25",
+"id": "4066268",
+"name": "Duop Reath",
+"dob": "1996-06-26",
 "month": 6,
-"day": 25,
-"year": 2002,
+"day": 26,
+"year": 1996,
 "teams": [
-"Free Agent"
+"Phoenix Suns"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "C",
+"jersey": "26",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066268.png"
 },
 {
 "id": "3032976",
@@ -4046,18 +4088,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4280245.png"
 },
 {
-"id": "",
+"id": "6580",
 "name": "Bradley Beal",
 "dob": "1993-06-28",
 "month": 6,
 "day": 28,
 "year": 1993,
 "teams": [
-"Free Agent"
+"LA Clippers"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "G",
+"jersey": "3",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6580.png"
 },
 {
 "id": "4065813",
@@ -4070,7 +4112,7 @@
 "Denver Nuggets"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "11",
 "headshot": ""
 },
 {
@@ -4098,7 +4140,7 @@
 "Oklahoma City Thunder"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "21",
 "headshot": ""
 },
 {
@@ -4137,7 +4179,7 @@
 "day": 29,
 "year": 1991,
 "teams": [
-"LA Clippers"
+"Toronto Raptors"
 ],
 "position": "F",
 "jersey": "2",
@@ -4165,10 +4207,10 @@
 "day": 30,
 "year": 2003,
 "teams": [
-"Washington Wizards"
+"New Orleans Pelicans"
 ],
 "position": "F",
-"jersey": "15",
+"jersey": "13",
 "headshot": ""
 },
 {
@@ -4182,7 +4224,7 @@
 "Atlanta Hawks"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "51",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4585618.png"
 },
 {
@@ -4196,7 +4238,7 @@
 "Los Angeles Lakers"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "31",
 "headshot": ""
 },
 {
@@ -4224,7 +4266,7 @@
 "Detroit Pistons"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "17",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395702.png"
 },
 {
@@ -4266,8 +4308,22 @@
 "Phoenix Suns"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "61",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592714.png"
+},
+{
+"id": "4592843",
+"name": "Brice Williams",
+"dob": "2001-07-05",
+"month": 7,
+"day": 5,
+"year": 2001,
+"teams": [
+"Detroit Pistons"
+],
+"position": "F",
+"jersey": "25",
+"headshot": ""
 },
 {
 "id": "4868423",
@@ -4280,7 +4336,7 @@
 "Los Angeles Lakers"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "7",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4868423.png"
 },
 {
@@ -4296,20 +4352,6 @@
 "position": "G",
 "jersey": "5",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4606840.png"
-},
-{
-"id": "",
-"name": "Mouhamadou Gueye",
-"dob": "1998-07-06",
-"month": 7,
-"day": 6,
-"year": 1998,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "4395628",
@@ -4347,10 +4389,10 @@
 "day": 8,
 "year": 2004,
 "teams": [
-"Washington Wizards"
+"Denver Nuggets"
 ],
 "position": "F",
-"jersey": "1",
+"jersey": "00",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105592.png"
 },
 {
@@ -4366,6 +4408,20 @@
 "position": "G",
 "jersey": "2",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065733.png"
+},
+{
+"id": "4593049",
+"name": "Orlando Robinson",
+"dob": "2000-07-10",
+"month": 7,
+"day": 10,
+"year": 2000,
+"teams": [
+"Chicago Bulls"
+],
+"position": "C",
+"jersey": "00",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593049.png"
 },
 {
 "id": "5105977",
@@ -4392,7 +4448,7 @@
 "Detroit Pistons"
 ],
 "position": "C",
-"jersey": "3",
+"jersey": "13",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107818.png"
 },
 {
@@ -4406,7 +4462,7 @@
 "San Antonio Spurs"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "22",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5101845.png"
 },
 {
@@ -4434,22 +4490,22 @@
 "Milwaukee Bucks"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "23",
 "headshot": ""
 },
 {
-"id": "",
+"id": "4433159",
 "name": "Dalen Terry",
 "dob": "2002-07-12",
 "month": 7,
 "day": 12,
 "year": 2002,
 "teams": [
-"Free Agent"
+"Golden State Warriors"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "G",
+"jersey": "21",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433159.png"
 },
 {
 "id": "4703115",
@@ -4462,7 +4518,7 @@
 "New Orleans Pelicans"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "10",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4703115.png"
 },
 {
@@ -4478,20 +4534,6 @@
 "position": "G",
 "jersey": "2",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278073.png"
-},
-{
-"id": "5363895",
-"name": "Narcisse Ngoy",
-"dob": "2004-07-13",
-"month": 7,
-"day": 13,
-"year": 2004,
-"teams": [
-"LA Clippers"
-],
-"position": "F",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "4397424",
@@ -4534,20 +4576,6 @@
 "position": "F",
 "jersey": "11",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4601023.png"
-},
-{
-"id": "4067017",
-"name": "A.J. Lawson",
-"dob": "2000-07-15",
-"month": 7,
-"day": 15,
-"year": 2000,
-"teams": [
-"Toronto Raptors"
-],
-"position": "G",
-"jersey": "0",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4067017.png"
 },
 {
 "id": "4848625",
@@ -4602,7 +4630,7 @@
 "San Antonio Spurs"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "23",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6440.png"
 },
 {
@@ -4620,6 +4648,20 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433076.png"
 },
 {
+"id": "4432189",
+"name": "Dain Dainja",
+"dob": "2002-07-16",
+"month": 7,
+"day": 16,
+"year": 2002,
+"teams": [
+"Brooklyn Nets"
+],
+"position": "F",
+"jersey": "42",
+"headshot": ""
+},
+{
 "id": "4432185",
 "name": "Micah Peavy",
 "dob": "2001-07-16",
@@ -4627,10 +4669,10 @@
 "day": 16,
 "year": 2001,
 "teams": [
-"New Orleans Pelicans"
+"Memphis Grizzlies"
 ],
 "position": "G",
-"jersey": "14",
+"jersey": "7",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432185.png"
 },
 {
@@ -4690,46 +4732,32 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5041935.png"
 },
 {
-"id": "",
-"name": "Thanasis Antetokounmpo",
-"dob": "1992-07-18",
+"id": "3907387",
+"name": "Ben Simmons",
+"dob": "1996-07-20",
 "month": 7,
-"day": 18,
-"year": 1992,
+"day": 20,
+"year": 1996,
 "teams": [
-"Free Agent"
+"Sacramento Kings"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "G",
+"jersey": "25",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3907387.png"
 },
 {
-"id": "4433569",
-"name": "Johni Broome",
-"dob": "2002-07-19",
-"month": 7,
-"day": 19,
-"year": 2002,
-"teams": [
-"LA Clippers"
-],
-"position": "F",
-"jersey": "",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433569.png"
-},
-{
-"id": "",
+"id": "2531367",
 "name": "Dwight Powell",
 "dob": "1991-07-20",
 "month": 7,
 "day": 20,
 "year": 1991,
 "teams": [
-"Free Agent"
+"Dallas Mavericks"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "F",
+"jersey": "7",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2531367.png"
 },
 {
 "id": "4348700",
@@ -4798,7 +4826,7 @@
 "Washington Wizards"
 ],
 "position": "C",
-"jersey": "",
+"jersey": "6",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278129.png"
 },
 {
@@ -4882,7 +4910,7 @@
 "Indiana Pacers"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "18",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105854.png"
 },
 {
@@ -4924,22 +4952,8 @@
 "Los Angeles Lakers"
 ],
 "position": "C",
-"jersey": "",
+"jersey": "14",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433136.png"
-},
-{
-"id": "",
-"name": "Killian Hayes",
-"dob": "2001-07-27",
-"month": 7,
-"day": 27,
-"year": 2001,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "5211983",
@@ -4966,36 +4980,8 @@
 "Toronto Raptors"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "22",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5149115.png"
-},
-{
-"id": "4277957",
-"name": "Isaiah Livers",
-"dob": "1998-07-28",
-"month": 7,
-"day": 28,
-"year": 1998,
-"teams": [
-"Phoenix Suns"
-],
-"position": "F",
-"jersey": "18",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277957.png"
-},
-{
-"id": "",
-"name": "Lindy Waters III",
-"dob": "1997-07-28",
-"month": 7,
-"day": 28,
-"year": 1997,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "4592699",
@@ -5012,17 +4998,17 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592699.png"
 },
 {
-"id": "",
+"id": "5106674",
 "name": "Peter Suder",
 "dob": "2003-07-29",
 "month": 7,
 "day": 29,
 "year": 2003,
 "teams": [
-"Free Agent"
+"Chicago Bulls"
 ],
-"position": "",
-"jersey": "",
+"position": "G",
+"jersey": "15",
 "headshot": ""
 },
 {
@@ -5050,7 +5036,7 @@
 "Minnesota Timberwolves"
 ],
 "position": "G",
-"jersey": "1",
+"jersey": "4",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432847.png"
 },
 {
@@ -5082,20 +5068,6 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3934723.png"
 },
 {
-"id": "",
-"name": "Dariq Whitehead",
-"dob": "2004-08-01",
-"month": 8,
-"day": 1,
-"year": 2004,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
 "id": "4433134",
 "name": "Scottie Barnes",
 "dob": "2001-08-01",
@@ -5122,6 +5094,20 @@
 "position": "C",
 "jersey": "7",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3102531.png"
+},
+{
+"id": "4703396",
+"name": "Graham Ike",
+"dob": "2002-08-03",
+"month": 8,
+"day": 3,
+"year": 2002,
+"teams": [
+"Golden State Warriors"
+],
+"position": "F",
+"jersey": "",
+"headshot": ""
 },
 {
 "id": "5061575",
@@ -5162,7 +5148,7 @@
 "San Antonio Spurs"
 ],
 "position": "C",
-"jersey": "",
+"jersey": "10",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105809.png"
 },
 {
@@ -5176,36 +5162,36 @@
 "Cleveland Cavaliers"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "15",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5041951.png"
 },
 {
-"id": "",
+"id": "3978",
 "name": "DeMar DeRozan",
 "dob": "1989-08-07",
 "month": 8,
 "day": 7,
 "year": 1989,
 "teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
-"id": "4683834",
-"name": "KJ Simpson",
-"dob": "2002-08-08",
-"month": 8,
-"day": 8,
-"year": 2002,
-"teams": [
 "Denver Nuggets"
 ],
 "position": "G",
-"jersey": "25",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683834.png"
+"jersey": "10",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3978.png"
+},
+{
+"id": "4592444",
+"name": "Jameer Nelson Jr.",
+"dob": "2001-08-07",
+"month": 8,
+"day": 7,
+"year": 2001,
+"teams": [
+"Philadelphia 76ers"
+],
+"position": "G",
+"jersey": "14",
+"headshot": ""
 },
 {
 "id": "6585",
@@ -5218,7 +5204,7 @@
 "New York Knicks"
 ],
 "position": "C",
-"jersey": "",
+"jersey": "0",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6585.png"
 },
 {
@@ -5264,6 +5250,34 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5211176.png"
 },
 {
+"id": "4278075",
+"name": "Kevin Knox II",
+"dob": "1999-08-11",
+"month": 8,
+"day": 11,
+"year": 1999,
+"teams": [
+"Orlando Magic"
+],
+"position": "F",
+"jersey": "24",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278075.png"
+},
+{
+"id": "4702099",
+"name": "Zack Austin",
+"dob": "2001-08-11",
+"month": 8,
+"day": 11,
+"year": 2001,
+"teams": [
+"Cleveland Cavaliers"
+],
+"position": "F",
+"jersey": "55",
+"headshot": ""
+},
+{
 "id": "6609",
 "name": "Khris Middleton",
 "dob": "1991-08-12",
@@ -5292,18 +5306,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4873138.png"
 },
 {
-"id": "",
+"id": "4065670",
 "name": "Bruce Brown",
 "dob": "1996-08-15",
 "month": 8,
 "day": 15,
 "year": 1996,
 "teams": [
-"Free Agent"
+"New York Knicks"
 ],
-"position": "",
+"position": "G",
 "jersey": "",
-"headshot": ""
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065670.png"
 },
 {
 "id": "4433607",
@@ -5344,7 +5358,7 @@
 "Houston Rockets"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "31",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3037789.png"
 },
 {
@@ -5372,22 +5386,8 @@
 "Memphis Grizzlies"
 ],
 "position": "F",
-"jersey": "24",
+"jersey": "17",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4594326.png"
-},
-{
-"id": "4897438",
-"name": "Trey Kaufman-Renn",
-"dob": "2002-08-19",
-"month": 8,
-"day": 19,
-"year": 2002,
-"teams": [
-"Minnesota Timberwolves"
-],
-"position": "F",
-"jersey": "",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4897438.png"
 },
 {
 "id": "4432816",
@@ -5400,7 +5400,7 @@
 "Minnesota Timberwolves"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "1",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432816.png"
 },
 {
@@ -5446,20 +5446,6 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278078.png"
 },
 {
-"id": "",
-"name": "Seth Curry",
-"dob": "1990-08-23",
-"month": 8,
-"day": 23,
-"year": 1990,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
 "id": "2991043",
 "name": "Caris LeVert",
 "dob": "1994-08-25",
@@ -5470,7 +5456,7 @@
 "Milwaukee Bucks"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "12",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991043.png"
 },
 {
@@ -5488,18 +5474,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065731.png"
 },
 {
-"id": "4897696",
-"name": "Jamarion Sharp",
-"dob": "2001-08-26",
+"id": "4701845",
+"name": "Kadary Richmond",
+"dob": "2001-08-25",
 "month": 8,
-"day": 26,
+"day": 25,
 "year": 2001,
 "teams": [
-"LA Clippers"
+"Cleveland Cavaliers"
 ],
-"position": "C",
-"jersey": "",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4897696.png"
+"position": "G",
+"jersey": "16",
+"headshot": ""
 },
 {
 "id": "3992",
@@ -5530,6 +5516,20 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5112087.png"
 },
 {
+"id": "4277880",
+"name": "Malik Williams",
+"dob": "1998-08-26",
+"month": 8,
+"day": 26,
+"year": 1998,
+"teams": [
+"San Antonio Spurs"
+],
+"position": "C",
+"jersey": "35",
+"headshot": ""
+},
+{
 "id": "4396971",
 "name": "Naz Reid",
 "dob": "1999-08-26",
@@ -5540,7 +5540,7 @@
 "Charlotte Hornets"
 ],
 "position": "C",
-"jersey": "",
+"jersey": "0",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396971.png"
 },
 {
@@ -5565,25 +5565,11 @@
 "day": 26,
 "year": 2003,
 "teams": [
-"Miami Heat"
+"Washington Wizards"
 ],
 "position": "G",
-"jersey": "8",
+"jersey": "13",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432645.png"
-},
-{
-"id": "",
-"name": "Alex Antetokounmpo",
-"dob": "2001-08-27",
-"month": 8,
-"day": 27,
-"year": 2001,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "4566434",
@@ -5614,44 +5600,16 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066372.png"
 },
 {
-"id": "",
-"name": "Bismack Biyombo",
-"dob": "1992-08-28",
-"month": 8,
-"day": 28,
-"year": 1992,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
-"id": "",
-"name": "Jeff Green",
-"dob": "1986-08-28",
-"month": 8,
-"day": 28,
-"year": 1986,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
-"id": "",
+"id": "4702134",
 "name": "Norchad Omier",
 "dob": "2001-08-28",
 "month": 8,
 "day": 28,
 "year": 2001,
 "teams": [
-"Free Agent"
+"Minnesota Timberwolves"
 ],
-"position": "",
+"position": "F",
 "jersey": "",
 "headshot": ""
 },
@@ -5698,6 +5656,20 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3934672.png"
 },
 {
+"id": "5105853",
+"name": "Fletcher Loyer",
+"dob": "2003-09-01",
+"month": 9,
+"day": 1,
+"year": 2003,
+"teams": [
+"LA Clippers"
+],
+"position": "G",
+"jersey": "26",
+"headshot": ""
+},
+{
 "id": "4065663",
 "name": "Josh Okogie",
 "dob": "1998-09-01",
@@ -5708,7 +5680,7 @@
 "Utah Jazz"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "21",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065663.png"
 },
 {
@@ -5722,7 +5694,7 @@
 "Houston Rockets"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "25",
 "headshot": ""
 },
 {
@@ -5733,10 +5705,10 @@
 "day": 2,
 "year": 1997,
 "teams": [
-"Toronto Raptors"
+"LA Clippers"
 ],
 "position": "F",
-"jersey": "3",
+"jersey": "7",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3913176.png"
 },
 {
@@ -5752,20 +5724,6 @@
 "position": "G",
 "jersey": "7",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278039.png"
-},
-{
-"id": "",
-"name": "Luke Travers",
-"dob": "2001-09-03",
-"month": 9,
-"day": 3,
-"year": 2001,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "4684272",
@@ -5820,7 +5778,7 @@
 "New York Knicks"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "55",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4838721.png"
 },
 {
@@ -5834,7 +5792,7 @@
 "Denver Nuggets"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "13",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4565698.png"
 },
 {
@@ -5850,20 +5808,6 @@
 "position": "G",
 "jersey": "45",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3908809.png"
-},
-{
-"id": "",
-"name": "Kevin Love",
-"dob": "1988-09-07",
-"month": 9,
-"day": 7,
-"year": 1988,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "5037873",
@@ -5894,18 +5838,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431823.png"
 },
 {
-"id": "",
+"id": "4431695",
 "name": "Drew Timme",
 "dob": "2000-09-09",
 "month": 9,
 "day": 9,
 "year": 2000,
 "teams": [
-"Free Agent"
+"Minnesota Timberwolves"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "F",
+"jersey": "17",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431695.png"
 },
 {
 "id": "4701208",
@@ -5943,7 +5887,7 @@
 "day": 11,
 "year": 2002,
 "teams": [
-"Denver Nuggets"
+"Cleveland Cavaliers"
 ],
 "position": "G",
 "jersey": "8",
@@ -5960,7 +5904,7 @@
 "Los Angeles Lakers"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "11",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433137.png"
 },
 {
@@ -5988,22 +5932,8 @@
 "Houston Rockets"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "2",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105837.png"
-},
-{
-"id": "2999547",
-"name": "Gary Harris",
-"dob": "1994-09-14",
-"month": 9,
-"day": 14,
-"year": 1994,
-"teams": [
-"Detroit Pistons"
-],
-"position": "G",
-"jersey": "",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2999547.png"
 },
 {
 "id": "4432737",
@@ -6030,7 +5960,7 @@
 "Dallas Mavericks"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "9",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105806.png"
 },
 {
@@ -6083,10 +6013,10 @@
 "day": 15,
 "year": 1993,
 "teams": [
-"Cleveland Cavaliers"
+"Charlotte Hornets"
 ],
 "position": "G",
-"jersey": "8",
+"jersey": "17",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3032979.png"
 },
 {
@@ -6132,32 +6062,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064290.png"
 },
 {
-"id": "",
+"id": "4432646",
 "name": "Kennedy Chandler",
 "dob": "2002-09-16",
 "month": 9,
 "day": 16,
 "year": 2002,
 "teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
-"id": "4432887",
-"name": "Tyson Etienne",
-"dob": "1999-09-17",
-"month": 9,
-"day": 17,
-"year": 1999,
-"teams": [
-"Brooklyn Nets"
+"Phoenix Suns"
 ],
 "position": "G",
-"jersey": "10",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432887.png"
+"jersey": "2",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432646.png"
 },
 {
 "id": "5082206",
@@ -6170,22 +6086,8 @@
 "Milwaukee Bucks"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "0",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5082206.png"
-},
-{
-"id": "4592187",
-"name": "Wendell Moore Jr.",
-"dob": "2001-09-18",
-"month": 9,
-"day": 18,
-"year": 2001,
-"teams": [
-"Detroit Pistons"
-],
-"position": "F",
-"jersey": "14",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592187.png"
 },
 {
 "id": "2490149",
@@ -6225,23 +6127,9 @@
 "teams": [
 "Sacramento Kings"
 ],
-"position": "PF",
+"position": "F",
 "jersey": "9",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431679.png"
-},
-{
-"id": "5105462",
-"name": "Richie Saunders",
-"dob": "2001-09-19",
-"month": 9,
-"day": 19,
-"year": 2001,
-"teams": [
-"Memphis Grizzlies"
-],
-"position": "G",
-"jersey": "",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105462.png"
 },
 {
 "id": "4277905",
@@ -6268,8 +6156,22 @@
 "Toronto Raptors"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "12",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2993874.png"
+},
+{
+"id": "4683736",
+"name": "Kobe Bufkin",
+"dob": "2003-09-21",
+"month": 9,
+"day": 21,
+"year": 2003,
+"teams": [
+"New Orleans Pelicans"
+],
+"position": "G",
+"jersey": "4",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683736.png"
 },
 {
 "id": "4432107",
@@ -6282,7 +6184,7 @@
 "Dallas Mavericks"
 ],
 "position": "G",
-"jersey": "25",
+"jersey": "8",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432107.png"
 },
 {
@@ -6310,7 +6212,7 @@
 "Detroit Pistons"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "20",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3908845.png"
 },
 {
@@ -6352,7 +6254,7 @@
 "Detroit Pistons"
 ],
 "position": "C",
-"jersey": "",
+"jersey": "34",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5037878.png"
 },
 {
@@ -6368,6 +6270,20 @@
 "position": "G",
 "jersey": "55",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593841.png"
+},
+{
+"id": "4685802",
+"name": "Robert McCray V",
+"dob": "2002-09-26",
+"month": 9,
+"day": 26,
+"year": 2002,
+"teams": [
+"Oklahoma City Thunder"
+],
+"position": "G",
+"jersey": "16",
+"headshot": ""
 },
 {
 "id": "4397475",
@@ -6394,7 +6310,7 @@
 "Philadelphia 76ers"
 ],
 "position": "G",
-"jersey": "9",
+"jersey": "8",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433144.png"
 },
 {
@@ -6440,20 +6356,6 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3202.png"
 },
 {
-"id": "",
-"name": "Aaron Holiday",
-"dob": "1996-09-30",
-"month": 9,
-"day": 30,
-"year": 1996,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
 "id": "5175737",
 "name": "Yaxel Lendeborg",
 "dob": "2002-09-30",
@@ -6464,7 +6366,7 @@
 "Golden State Warriors"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "1",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5175737.png"
 },
 {
@@ -6492,22 +6394,8 @@
 "Orlando Magic"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "25",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107251.png"
-},
-{
-"id": "",
-"name": "Joe Ingles",
-"dob": "1987-10-02",
-"month": 10,
-"day": 2,
-"year": 1987,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "5241364",
@@ -6520,7 +6408,7 @@
 "Oklahoma City Thunder"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "14",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5241364.png"
 },
 {
@@ -6534,22 +6422,22 @@
 "Boston Celtics"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "20",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5106283.png"
 },
 {
-"id": "",
+"id": "4576085",
 "name": "JD Davison",
 "dob": "2002-10-03",
 "month": 10,
 "day": 3,
 "year": 2002,
 "teams": [
-"Free Agent"
+"Orlando Magic"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "G",
+"jersey": "20",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4576085.png"
 },
 {
 "id": "4065654",
@@ -6566,6 +6454,20 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065654.png"
 },
 {
+"id": "4898369",
+"name": "Curtis Jones",
+"dob": "2001-10-04",
+"month": 10,
+"day": 4,
+"year": 2001,
+"teams": [
+"Cleveland Cavaliers"
+],
+"position": "G",
+"jersey": "14",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4898369.png"
+},
+{
 "id": "4873201",
 "name": "Asa Newell",
 "dob": "2005-10-05",
@@ -6578,20 +6480,6 @@
 "position": "F",
 "jersey": "14",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4873201.png"
-},
-{
-"id": "",
-"name": "Toby Okani",
-"dob": "2001-10-05",
-"month": 10,
-"day": 5,
-"year": 2001,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "4683774",
@@ -6622,32 +6510,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277813.png"
 },
 {
-"id": "",
+"id": "4433247",
 "name": "Jonathan Kuminga",
 "dob": "2002-10-06",
 "month": 10,
 "day": 6,
 "year": 2002,
 "teams": [
-"Free Agent"
+"Minnesota Timberwolves"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
-"id": "4433133",
-"name": "Jahmir Young",
-"dob": "2000-10-07",
-"month": 10,
-"day": 7,
-"year": 2000,
-"teams": [
-"Miami Heat"
-],
-"position": "G",
-"jersey": "17",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433133.png"
+"position": "F",
+"jersey": "24",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433247.png"
 },
 {
 "id": "3135045",
@@ -6660,7 +6534,7 @@
 "Charlotte Hornets"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "8",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3135045.png"
 },
 {
@@ -6676,6 +6550,20 @@
 "position": "G",
 "jersey": "8",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683766.png"
+},
+{
+"id": "4432187",
+"name": "Reece Beekman",
+"dob": "2001-10-08",
+"month": 10,
+"day": 8,
+"year": 2001,
+"teams": [
+"Washington Wizards"
+],
+"position": "G",
+"jersey": "26",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432187.png"
 },
 {
 "id": "4433149",
@@ -6727,10 +6615,10 @@
 "day": 10,
 "year": 2002,
 "teams": [
-"LA Clippers"
+"Houston Rockets"
 ],
 "position": "G",
-"jersey": "00",
+"jersey": "0",
 "headshot": ""
 },
 {
@@ -6758,22 +6646,8 @@
 "Boston Celtics"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "45",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3195.png"
-},
-{
-"id": "",
-"name": "MarJon Beauchamp",
-"dob": "2000-10-12",
-"month": 10,
-"day": 12,
-"year": 2000,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "4432247",
@@ -6786,7 +6660,7 @@
 "Minnesota Timberwolves"
 ],
 "position": "G",
-"jersey": "22",
+"jersey": "7",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432247.png"
 },
 {
@@ -6818,18 +6692,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5144091.png"
 },
 {
-"id": "4432068",
-"name": "Josh Oduro",
-"dob": "2000-10-14",
+"id": "4433622",
+"name": "Chris Livingston",
+"dob": "2003-10-15",
 "month": 10,
-"day": 14,
-"year": 2000,
+"day": 15,
+"year": 2003,
 "teams": [
-"New Orleans Pelicans"
+"Washington Wizards"
 ],
-"position": "C",
-"jersey": "13",
-"headshot": ""
+"position": "F",
+"jersey": "24",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433622.png"
 },
 {
 "id": "3134908",
@@ -6874,18 +6748,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5239561.png"
 },
 {
-"id": "",
+"id": "2581184",
 "name": "Anthony Gill",
 "dob": "1992-10-17",
 "month": 10,
 "day": 17,
 "year": 1992,
 "teams": [
-"Free Agent"
+"Washington Wizards"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "F",
+"jersey": "16",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2581184.png"
 },
 {
 "id": "4066211",
@@ -6930,6 +6804,20 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277922.png"
 },
 {
+"id": "4433176",
+"name": "RJ Davis",
+"dob": "2001-10-21",
+"month": 10,
+"day": 21,
+"year": 2001,
+"teams": [
+"San Antonio Spurs"
+],
+"position": "G",
+"jersey": "14",
+"headshot": ""
+},
+{
 "id": "4398390",
 "name": "Jalen Pickett",
 "dob": "1999-10-22",
@@ -6937,10 +6825,10 @@
 "day": 22,
 "year": 1999,
 "teams": [
-"Denver Nuggets"
+"LA Clippers"
 ],
 "position": "G",
-"jersey": "24",
+"jersey": "21",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4398390.png"
 },
 {
@@ -7056,18 +6944,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136777.png"
 },
 {
-"id": "",
+"id": "4702159",
 "name": "Dillon Jones",
 "dob": "2001-10-29",
 "month": 10,
 "day": 29,
 "year": 2001,
 "teams": [
-"Free Agent"
+"Philadelphia 76ers"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "F",
+"jersey": "35",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702159.png"
 },
 {
 "id": "5107897",
@@ -7080,8 +6968,22 @@
 "Sacramento Kings"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "22",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107897.png"
+},
+{
+"id": "4279143",
+"name": "Tyreke Key",
+"dob": "1998-10-29",
+"month": 10,
+"day": 29,
+"year": 1998,
+"teams": [
+"Toronto Raptors"
+],
+"position": "G",
+"jersey": "",
+"headshot": ""
 },
 {
 "id": "5105839",
@@ -7126,20 +7028,6 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592857.png"
 },
 {
-"id": "",
-"name": "Isaiah Stevens",
-"dob": "2000-11-01",
-"month": 11,
-"day": 1,
-"year": 2000,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
 "id": "4845367",
 "name": "Stephon Castle",
 "dob": "2004-11-01",
@@ -7154,17 +7042,17 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4845367.png"
 },
 {
-"id": "",
-"name": "Tyler Smith",
-"dob": "2004-11-02",
+"id": "4593815",
+"name": "Rashaun Agee",
+"dob": "2000-11-02",
 "month": 11,
 "day": 2,
-"year": 2004,
+"year": 2000,
 "teams": [
-"Free Agent"
+"Cleveland Cavaliers"
 ],
-"position": "",
-"jersey": "",
+"position": "F",
+"jersey": "19",
 "headshot": ""
 },
 {
@@ -7210,6 +7098,20 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431678.png"
 },
 {
+"id": "4398257",
+"name": "Jake Stephens",
+"dob": "1999-11-05",
+"month": 11,
+"day": 5,
+"year": 1999,
+"teams": [
+"Milwaukee Bucks"
+],
+"position": "C",
+"jersey": "88",
+"headshot": ""
+},
+{
 "id": "5105553",
 "name": "Julian Phillips",
 "dob": "2003-11-05",
@@ -7217,10 +7119,10 @@
 "day": 5,
 "year": 2003,
 "teams": [
-"Minnesota Timberwolves"
+"Houston Rockets"
 ],
 "position": "F",
-"jersey": "4",
+"jersey": "3",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105553.png"
 },
 {
@@ -7234,7 +7136,7 @@
 "Minnesota Timberwolves"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "41",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136196.png"
 },
 {
@@ -7280,20 +7182,6 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683692.png"
 },
 {
-"id": "",
-"name": "Dalano Banton",
-"dob": "1999-11-07",
-"month": 11,
-"day": 7,
-"year": 1999,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
 "id": "4684793",
 "name": "Kyle Filipowski",
 "dob": "2003-11-07",
@@ -7304,7 +7192,7 @@
 "Utah Jazz"
 ],
 "position": "F",
-"jersey": "22",
+"jersey": "2",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684793.png"
 },
 {
@@ -7336,6 +7224,20 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433627.png"
 },
 {
+"id": "4397689",
+"name": "Drew Peterson",
+"dob": "1999-11-09",
+"month": 11,
+"day": 9,
+"year": 1999,
+"teams": [
+"Chicago Bulls"
+],
+"position": "F",
+"jersey": "21",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397689.png"
+},
+{
 "id": "4712863",
 "name": "Mouhamed Gueye",
 "dob": "2002-11-09",
@@ -7357,10 +7259,10 @@
 "day": 9,
 "year": 2000,
 "teams": [
-"Philadelphia 76ers"
+"New Orleans Pelicans"
 ],
 "position": "F",
-"jersey": "12",
+"jersey": "9",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431675.png"
 },
 {
@@ -7376,20 +7278,6 @@
 "position": "G",
 "jersey": "21",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683934.png"
-},
-{
-"id": "5184016",
-"name": "Malique Lewis",
-"dob": "2004-11-10",
-"month": 11,
-"day": 10,
-"year": 2004,
-"teams": [
-"Milwaukee Bucks"
-],
-"position": "F",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "4431785",
@@ -7448,20 +7336,6 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432573.png"
 },
 {
-"id": "",
-"name": "Russell Westbrook",
-"dob": "1988-11-12",
-"month": 11,
-"day": 12,
-"year": 1988,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
 "id": "4432190",
 "name": "Andre Jackson Jr.",
 "dob": "2001-11-13",
@@ -7500,22 +7374,8 @@
 "San Antonio Spurs"
 ],
 "position": "F",
-"jersey": "",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105337.png"
-},
-{
-"id": "4683749",
-"name": "TyTy Washington Jr.",
-"dob": "2001-11-15",
-"month": 11,
-"day": 15,
-"year": 2001,
-"teams": [
-"LA Clippers"
-],
-"position": "G",
 "jersey": "15",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683749.png"
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105337.png"
 },
 {
 "id": "5142620",
@@ -7539,11 +7399,39 @@
 "day": 16,
 "year": 2000,
 "teams": [
-"Minnesota Timberwolves"
+"Utah Jazz"
+],
+"position": "G",
+"jersey": "5",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432811.png"
+},
+{
+"id": "4431720",
+"name": "Lester Quinones",
+"dob": "2000-11-16",
+"month": 11,
+"day": 16,
+"year": 2000,
+"teams": [
+"Miami Heat"
 ],
 "position": "G",
 "jersey": "",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432811.png"
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431720.png"
+},
+{
+"id": "4897504",
+"name": "Wyatt Fricks",
+"dob": "2002-11-17",
+"month": 11,
+"day": 17,
+"year": 2002,
+"teams": [
+"Charlotte Hornets"
+],
+"position": "F",
+"jersey": "23",
+"headshot": ""
 },
 {
 "id": "4433621",
@@ -7560,20 +7448,6 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433621.png"
 },
 {
-"id": "",
-"name": "Patrick Baldwin Jr.",
-"dob": "2002-11-18",
-"month": 11,
-"day": 18,
-"year": 2002,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
 "id": "4066650",
 "name": "Zach Collins",
 "dob": "1997-11-19",
@@ -7588,18 +7462,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066650.png"
 },
 {
-"id": "",
+"id": "4592686",
 "name": "Antonio Reeves",
 "dob": "2000-11-20",
 "month": 11,
 "day": 20,
 "year": 2000,
 "teams": [
-"Free Agent"
+"Minnesota Timberwolves"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "G",
+"jersey": "12",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592686.png"
 },
 {
 "id": "4895758",
@@ -7609,10 +7483,10 @@
 "day": 20,
 "year": 2004,
 "teams": [
-"Utah Jazz"
+"Minnesota Timberwolves"
 ],
 "position": "F",
-"jersey": "5",
+"jersey": "9",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4895758.png"
 },
 {
@@ -7626,7 +7500,7 @@
 "Philadelphia 76ers"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "45",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3912848.png"
 },
 {
@@ -7637,10 +7511,10 @@
 "day": 20,
 "year": 2003,
 "teams": [
-"Toronto Raptors"
+"LA Clippers"
 ],
 "position": "G",
-"jersey": "1",
+"jersey": "9",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5106258.png"
 },
 {
@@ -7668,7 +7542,7 @@
 "Los Angeles Lakers"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "43",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5113969.png"
 },
 {
@@ -7682,7 +7556,7 @@
 "Brooklyn Nets"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "9",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4870564.png"
 },
 {
@@ -7700,18 +7574,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433287.png"
 },
 {
-"id": "",
+"id": "4397040",
 "name": "Brandon Williams",
 "dob": "1999-11-22",
 "month": 11,
 "day": 22,
 "year": 1999,
 "teams": [
-"Free Agent"
+"Golden State Warriors"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "G",
+"jersey": "12",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397040.png"
 },
 {
 "id": "4684806",
@@ -7752,22 +7626,8 @@
 "Philadelphia 76ers"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "00",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4873090.png"
-},
-{
-"id": "4432180",
-"name": "Hunter Dickinson",
-"dob": "2000-11-25",
-"month": 11,
-"day": 25,
-"year": 2000,
-"teams": [
-"New Orleans Pelicans"
-],
-"position": "C",
-"jersey": "4",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432180.png"
 },
 {
 "id": "4687718",
@@ -7782,20 +7642,6 @@
 "position": "F",
 "jersey": "00",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4687718.png"
-},
-{
-"id": "",
-"name": "Trevon Scott",
-"dob": "1996-11-25",
-"month": 11,
-"day": 25,
-"year": 1996,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "5061568",
@@ -7833,10 +7679,10 @@
 "day": 27,
 "year": 2002,
 "teams": [
-"San Antonio Spurs"
+"Utah Jazz"
 ],
 "position": "F",
-"jersey": "55",
+"jersey": "00",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433618.png"
 },
 {
@@ -7847,11 +7693,25 @@
 "day": 27,
 "year": 1999,
 "teams": [
-"Utah Jazz"
+"Houston Rockets"
 ],
 "position": "C",
-"jersey": "34",
+"jersey": "9",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432827.png"
+},
+{
+"id": "4432162",
+"name": "Brandon Boston Jr.",
+"dob": "2001-11-28",
+"month": 11,
+"day": 28,
+"year": 2001,
+"teams": [
+"Chicago Bulls"
+],
+"position": "G",
+"jersey": "13",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432162.png"
 },
 {
 "id": "4395623",
@@ -7864,7 +7724,7 @@
 "Toronto Raptors"
 ],
 "position": "C",
-"jersey": "",
+"jersey": "50",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395623.png"
 },
 {
@@ -7882,18 +7742,18 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064514.png"
 },
 {
-"id": "",
+"id": "4278076",
 "name": "Nick Richards",
 "dob": "1997-11-29",
 "month": 11,
 "day": 29,
 "year": 1997,
 "teams": [
-"Free Agent"
+"Miami Heat"
 ],
-"position": "",
-"jersey": "",
-"headshot": ""
+"position": "C",
+"jersey": "8",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278076.png"
 },
 {
 "id": "4066218",
@@ -7917,10 +7777,10 @@
 "day": 1,
 "year": 2004,
 "teams": [
-"Memphis Grizzlies"
+"New Orleans Pelicans"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "14",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5170947.png"
 },
 {
@@ -7934,7 +7794,7 @@
 "Sacramento Kings"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "20",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397654.png"
 },
 {
@@ -7994,6 +7854,20 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133626.png"
 },
 {
+"id": "4432588",
+"name": "John Butler Jr.",
+"dob": "2002-12-04",
+"month": 12,
+"day": 4,
+"year": 2002,
+"teams": [
+"Milwaukee Bucks"
+],
+"position": "F",
+"jersey": "27",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432588.png"
+},
+{
 "id": "5279129",
 "name": "Sergio de Larrea",
 "dob": "2005-12-04",
@@ -8045,9 +7919,23 @@
 "teams": [
 "Minnesota Timberwolves"
 ],
-"position": "G",
-"jersey": "",
+"position": "F",
+"jersey": "33",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5061585.png"
+},
+{
+"id": "4397784",
+"name": "Malachi Smith",
+"dob": "1999-12-06",
+"month": 12,
+"day": 6,
+"year": 1999,
+"teams": [
+"Toronto Raptors"
+],
+"position": "G",
+"jersey": "18",
+"headshot": ""
 },
 {
 "id": "5157066",
@@ -8062,6 +7950,20 @@
 "position": "G",
 "jersey": "12",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5157066.png"
+},
+{
+"id": "4837238",
+"name": "Tucker DeVries",
+"dob": "2002-12-07",
+"month": 12,
+"day": 7,
+"year": 2002,
+"teams": [
+"Boston Celtics"
+],
+"position": "F",
+"jersey": "26",
+"headshot": ""
 },
 {
 "id": "4065804",
@@ -8102,7 +8004,7 @@
 "Phoenix Suns"
 ],
 "position": "F",
-"jersey": "7",
+"jersey": "19",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4291678.png"
 },
 {
@@ -8116,7 +8018,7 @@
 "Indiana Pacers"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "10",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133603.png"
 },
 {
@@ -8134,6 +8036,34 @@
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3899664.png"
 },
 {
+"id": "4432976",
+"name": "Coleman Hawkins",
+"dob": "2001-12-10",
+"month": 12,
+"day": 10,
+"year": 2001,
+"teams": [
+"Denver Nuggets"
+],
+"position": "F",
+"jersey": "43",
+"headshot": ""
+},
+{
+"id": "4684682",
+"name": "Jonas Aidoo",
+"dob": "2002-12-10",
+"month": 12,
+"day": 10,
+"year": 2002,
+"teams": [
+"Utah Jazz"
+],
+"position": "C",
+"jersey": "13",
+"headshot": ""
+},
+{
 "id": "5164559",
 "name": "Nate Ament",
 "dob": "2006-12-10",
@@ -8144,8 +8074,22 @@
 "Milwaukee Bucks"
 ],
 "position": "F",
-"jersey": "",
+"jersey": "15",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5164559.png"
+},
+{
+"id": "3904625",
+"name": "Tacko Fall",
+"dob": "1995-12-10",
+"month": 12,
+"day": 10,
+"year": 1995,
+"teams": [
+"Philadelphia 76ers"
+],
+"position": "C",
+"jersey": "99",
+"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3904625.png"
 },
 {
 "id": "4431680",
@@ -8200,22 +8144,8 @@
 "Denver Nuggets"
 ],
 "position": "G",
-"jersey": "",
+"jersey": "4",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277890.png"
-},
-{
-"id": "",
-"name": "Nicolas Batum",
-"dob": "1988-12-14",
-"month": 12,
-"day": 14,
-"year": 1988,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
 },
 {
 "id": "4433174",
@@ -8256,7 +8186,7 @@
 "Phoenix Suns"
 ],
 "position": "C",
-"jersey": "15",
+"jersey": "25",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701232.png"
 },
 {
@@ -8267,10 +8197,10 @@
 "day": 17,
 "year": 1992,
 "teams": [
-"Atlanta Hawks"
+"Chicago Bulls"
 ],
 "position": "G",
-"jersey": "8",
+"jersey": "",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2990984.png"
 },
 {
@@ -8286,48 +8216,6 @@
 "position": "F",
 "jersey": "45",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105550.png"
-},
-{
-"id": "4017844",
-"name": "Guerschon Yabusele",
-"dob": "1995-12-17",
-"month": 12,
-"day": 17,
-"year": 1995,
-"teams": [
-"Chicago Bulls"
-],
-"position": "F",
-"jersey": "28",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4017844.png"
-},
-{
-"id": "",
-"name": "Adama Bal",
-"dob": "2003-12-18",
-"month": 12,
-"day": 18,
-"year": 2003,
-"teams": [
-"Free Agent"
-],
-"position": "",
-"jersey": "",
-"headshot": ""
-},
-{
-"id": "4432821",
-"name": "E.J. Liddell",
-"dob": "2000-12-18",
-"month": 12,
-"day": 18,
-"year": 2000,
-"teams": [
-"Brooklyn Nets"
-],
-"position": "F",
-"jersey": "9",
-"headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432821.png"
 },
 {
 "id": "4701230",
@@ -8354,7 +8242,7 @@
 "Chicago Bulls"
 ],
 "position": "F",
-"jersey": "24",
+"jersey": "2",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5242496.png"
 },
 {
@@ -8368,7 +8256,7 @@
 "Detroit Pistons"
 ],
 "position": "G",
-"jersey": "20",
+"jersey": "8",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4700852.png"
 },
 {
@@ -8412,6 +8300,20 @@
 "position": "G",
 "jersey": "4",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066259.png"
+},
+{
+"id": "3155937",
+"name": "Jon Elmore",
+"dob": "1995-12-20",
+"month": 12,
+"day": 20,
+"year": 1995,
+"teams": [
+"San Antonio Spurs"
+],
+"position": "G",
+"jersey": "33",
+"headshot": ""
 },
 {
 "id": "5041939",
@@ -8480,8 +8382,22 @@
 "Utah Jazz"
 ],
 "position": "F",
-"jersey": "2",
+"jersey": "25",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396963.png"
+},
+{
+"id": "5106272",
+"name": "Milos Uzan",
+"dob": "2002-12-26",
+"month": 12,
+"day": 26,
+"year": 2002,
+"teams": [
+"Boston Celtics"
+],
+"position": "G",
+"jersey": "29",
+"headshot": ""
 },
 {
 "id": "4869780",
@@ -8510,6 +8426,20 @@
 "position": "C",
 "jersey": "52",
 "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277951.png"
+},
+{
+"id": "4395667",
+"name": "Dane Goodwin",
+"dob": "1999-12-28",
+"month": 12,
+"day": 28,
+"year": 1999,
+"teams": [
+"Denver Nuggets"
+],
+"position": "G",
+"jersey": "20",
+"headshot": ""
 },
 {
 "id": "4066993",
