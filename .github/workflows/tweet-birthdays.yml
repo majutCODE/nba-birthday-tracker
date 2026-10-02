@@ -12,7 +12,7 @@ on:
   workflow_dispatch: {} # lets you trigger a run manually from the Actions tab, bypassing the time/once-per-day gates
 
 permissions:
-  contents: read # read-only: this workflow no longer writes to the repo
+  contents: write # only for the monthly keep-alive commit at the end of this job
 
 concurrency:
   # Never let two runs race on the shared "already posted" state.
@@ -60,3 +60,29 @@ jobs:
         with:
           path: bot/last_posted.txt
           key: last-posted-${{ github.run_id }}
+
+      # GitHub disables scheduled workflows after 60 days of repository
+      # inactivity. Until Aug 2026 the bot's own daily state commit kept the
+      # repo active; moving that state into the cache (to stop the Pages
+      # rebuild emails) silently removed the only recurring activity, and
+      # GitHub duly warned the schedule was about to be switched off.
+      #
+      # So: one empty commit a month. Enough to reset the 60-day clock with
+      # plenty of slack, rare enough that the Pages rebuild it triggers is a
+      # non-event, and it piggybacks on this workflow, which demonstrably
+      # does run, rather than on a separate schedule that might be throttled.
+      - name: Keep repository active
+        if: github.event_name == 'schedule'
+        continue-on-error: true # a failed keep-alive must never fail the tweet job
+        run: |
+          age_days=$(( ( $(date +%s) - $(git log -1 --format=%ct) ) / 86400 ))
+          echo "Last commit was ${age_days} day(s) ago."
+          if [ "$age_days" -ge 30 ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit --allow-empty -m "Keep scheduled workflow alive (GitHub disables it after 60 days idle)"
+            git push
+            echo "Pushed keep-alive commit."
+          else
+            echo "Recent enough; no keep-alive commit needed."
+          fi
