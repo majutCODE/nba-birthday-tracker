@@ -2,6 +2,9 @@ name = "nba-birthday-cron"
 main = "index.js"
 compatibility_date = "2026-10-07"
 
+# No public URL: this Worker is only ever invoked by its cron triggers.
+workers_dev = false
+
 # 17:00 UTC = 1pm EDT / 6pm BST, and noon EST / 5pm GMT once the clocks
 # change - lunchtime in the US and early evening in the UK either way,
 # comfortably before tip-off. Cloudflare honours this to the minute, unlike

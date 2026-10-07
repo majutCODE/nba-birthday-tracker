@@ -10,6 +10,10 @@
  * It identifies itself with source=cron so the bot applies its normal
  * posting-window and once-per-day guards, rather than treating this as a
  * human pressing "Run workflow".
+ *
+ * Cron-only on purpose: there is no fetch handler and no workers.dev URL,
+ * because a public endpoint here would let anyone who found it fire off
+ * tweets on demand.
  */
 
 const OWNER = "majutCODE";
@@ -51,14 +55,4 @@ export default {
     );
   },
 
-  // Manual check: visiting the Worker URL triggers the same dispatch, so you
-  // can confirm the token works without waiting for the cron.
-  async fetch(request, env) {
-    try {
-      await dispatch(env);
-      return new Response("Dispatched workflow.\n");
-    } catch (e) {
-      return new Response(`${e.message}\n`, { status: 500 });
-    }
-  },
 };
