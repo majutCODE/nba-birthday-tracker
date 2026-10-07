@@ -31,12 +31,18 @@ from zoneinfo import ZoneInfo
 
 import requests
 
-# Post any time from 6pm ET onwards, not at exactly 18:00. GitHub throttles
-# scheduled workflows hard on low-traffic repos — we asked for every 15
-# minutes and actually get ~4 runs a day at unpredictable hours — so an
-# exact-hour match silently skipped whole days. A window means any run that
-# lands in the evening posts; the once-per-day guard below stops repeats.
-TARGET_HOUR_ET = 18
+# Post around the middle of the US day: late enough to be the evening in the
+# UK, early enough that it lands before tip-off, which is the whole point —
+# a birthday tweet after the games have been played is useless for props.
+#
+# It has to be a bounded window, not "from X onwards". GitHub's scheduler is
+# best-effort: measured over 60 runs, the first cron of the day lands within
+# an hour, but later ones have been up to 6.7 hours late. An open-ended
+# "post from 6pm ET onwards" therefore let a badly delayed run post at 10pm
+# ET (3am UK). Outside this window we skip the day instead, on the basis
+# that no tweet beats a useless one.
+POST_WINDOW_START_ET = 12  # noon ET  == 5pm UK
+POST_WINDOW_END_ET = 16    # 4:59pm ET == 9:59pm UK, still before tip-off
 STATE_FILE = Path(__file__).parent / "last_posted.txt"
 
 TEAM_IDS = {
@@ -225,8 +231,18 @@ def main():
         if already_posted_today(today_str):
             print(f"Already posted today ({today_str}). Skipping.")
             return
-        if now_et.hour < TARGET_HOUR_ET:
-            print(f"Too early ({now_et.hour}:00 ET, posting from {TARGET_HOUR_ET}:00 ET onwards). Skipping.")
+        if now_et.hour < POST_WINDOW_START_ET:
+            print(
+                f"Too early ({now_et.hour}:00 ET); posting window is "
+                f"{POST_WINDOW_START_ET}:00-{POST_WINDOW_END_ET}:59 ET. Skipping."
+            )
+            return
+        if now_et.hour > POST_WINDOW_END_ET:
+            print(
+                f"Too late ({now_et.hour}:00 ET); posting window is "
+                f"{POST_WINDOW_START_ET}:00-{POST_WINDOW_END_ET}:59 ET. "
+                "Skipping rather than tweeting after tip-off."
+            )
             return
 
     players = fetch_active_players()

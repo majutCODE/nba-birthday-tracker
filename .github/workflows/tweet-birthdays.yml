@@ -2,13 +2,16 @@ name: Tweet NBA birthdays
 
 on:
   schedule:
-    # Hourly across the evening ET window (22:00-03:00 UTC == 18:00-23:00
-    # EDT), not every 15 minutes. Polling every 15 min queued ~96 runs/day
-    # and GitHub started cancelling them before they ever picked up a
-    # runner, which is what produced the failure emails. Six well-spaced
-    # runs get honored far more reliably; the script posts on the first one
-    # at or after 6pm ET and the once-per-day guard ignores the rest.
-    - cron: "0 22,23,0,1,2,3 * * *"
+    # Target: ~1pm ET / 6pm UK, before tip-off. 17:00 UTC is 1pm EDT (noon
+    # EST) and 6pm BST (5pm GMT), so it holds up either side of the clock
+    # changes.
+    #
+    # Measured over 60 runs: GitHub lands the first cron of the day within
+    # about an hour, but delays later ones by 3-6.7 hours. So these all sit
+    # at or before the target and the script's window (noon-4:59pm ET)
+    # discards anything that drifts past it. Previously the crons sat in the
+    # evening and a delayed run tweeted at 10pm ET / 3am UK.
+    - cron: "0 17,18,19,20 * * *"
   workflow_dispatch: {} # lets you trigger a run manually from the Actions tab, bypassing the time/once-per-day gates
 
 permissions:
