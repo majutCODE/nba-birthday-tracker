@@ -47,12 +47,15 @@ async function dispatch(env) {
 
 export default {
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(
-      dispatch(env).then(
-        (r) => console.log(r),
-        (e) => console.error(e.message),
-      ),
-    );
+    // Deliberately not caught. Cloudflare records the status of a cron
+    // invocation from whether this promise rejects, so swallowing the error
+    // would mark a failed dispatch as a success and hide it from the Cron
+    // Trigger "Past Events" table and from observability alerts.
+    //
+    // That matters most when GITHUB_TOKEN expires: GitHub answers 401, no
+    // workflow is ever triggered, and nothing else would tell us. Letting it
+    // throw is the only signal we get.
+    const result = await dispatch(env);
+    console.log(result);
   },
-
 };
