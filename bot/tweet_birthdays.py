@@ -141,9 +141,21 @@ def get_us_now():
 
 
 def is_manual_run():
-    # Defaults to True (bypass gates) when GITHUB_EVENT_NAME is unset, which
-    # covers running the script locally for testing.
-    return os.environ.get("GITHUB_EVENT_NAME", "workflow_dispatch") == "workflow_dispatch"
+    """True only for a human testing this, which bypasses every gate.
+
+    The external Cloudflare cron also triggers us via workflow_dispatch, but
+    it must NOT bypass the gates: without the once-per-day guard it would
+    double-post whenever GitHub's own schedule happened to fire too. It
+    identifies itself with source=cron and is treated exactly like a
+    scheduled run.
+
+    Defaults to manual when GITHUB_EVENT_NAME is unset, which covers running
+    the script locally.
+    """
+    event = os.environ.get("GITHUB_EVENT_NAME", "workflow_dispatch")
+    if event != "workflow_dispatch":
+        return False
+    return os.environ.get("TRIGGER_SOURCE", "manual") != "cron"
 
 
 def already_posted_today(today_str):

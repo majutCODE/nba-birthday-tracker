@@ -12,7 +12,12 @@ on:
     # discards anything that drifts past it. Previously the crons sat in the
     # evening and a delayed run tweeted at 10pm ET / 3am UK.
     - cron: "0 17,18,19,20 * * *"
-  workflow_dispatch: {} # lets you trigger a run manually from the Actions tab, bypassing the time/once-per-day gates
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Who triggered this. 'cron' = external Cloudflare scheduler (obeys the posting window and once-per-day guard); anything else = a human testing, which bypasses both."
+        required: false
+        default: manual
 
 permissions:
   contents: write # only for the monthly keep-alive commit at the end of this job
@@ -55,10 +60,11 @@ jobs:
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
           GITHUB_EVENT_NAME: ${{ github.event_name }}
+          TRIGGER_SOURCE: ${{ github.event.inputs.source }}
         run: python bot/tweet_birthdays.py
 
       - name: Save last-posted state
-        if: always() && github.event_name != 'workflow_dispatch'
+        if: always() && (github.event_name == 'schedule' || github.event.inputs.source == 'cron')
         uses: actions/cache/save@v4
         with:
           path: bot/last_posted.txt
@@ -81,7 +87,7 @@ jobs:
       # workflow, which demonstrably runs, rather than a separate schedule
       # GitHub might throttle.
       - name: Refresh roster snapshot and keep repository active
-        if: github.event_name == 'schedule'
+        if: github.event_name == 'schedule' || github.event.inputs.source == 'cron'
         continue-on-error: true # must never fail the tweet job
         run: |
           age_days=$(( ( $(date +%s) - $(git log -1 --format=%ct) ) / 86400 ))
